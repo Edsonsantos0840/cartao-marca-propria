@@ -7,11 +7,13 @@ import CardVideos from "./components/CardVideos";
 import ImageSlider from "./components/ImageSlider";
 import Vantagens from "./components/Vantagens";
 import Footer from "./Footer";
-import Links from "./components/CadrLink";
+import Links from "./components/CardLink";
+import MobileSlide from "./components/MobileSlide";
 
 export default function Home() {
   return (
     <main className="">
+      <MobileSlide/>
       <ImageSlider />
       <Links  href="https://wa.link/146h7e" target="_blank" rel="noopener noreferrer" texto="Fale com um representante"/>
       <Vantagens />

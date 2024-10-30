@@ -19,7 +19,7 @@ const CardQuemSomos: React.FC = () => {
               alt="Foto da sede BrasilCard"
               width={550}
               height={380}
-              className="photo-1 shadow-lg rounded-md relative z-10 left-8"
+              className="photo-1 shadow-lg rounded-md relative z-10 md:left-8"
             />
             <div className="flex ">
             <Image

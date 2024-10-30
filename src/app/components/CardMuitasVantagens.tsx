@@ -6,11 +6,11 @@ import mulher from '../assets/mulher.png'
 
 const CardMuitasVantagens: React.FC = () => {
   return (
-    <div className="banners bg-gray-100 py-8">
-      <div className="container px-4 pb-5">
+    <div className="banners bg-gray-100 py-4 md:py-8">
+      <div className="container px-1 md:px-4 pb-5">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Banner Cliente */}
-          <div className="custom banner-cliente  p-6  ">
+          <div className="custom banner-cliente  md:p-6  ">
             <div className="inner flex bg-[var(--blue)] pt-4 px-4 rounded-lg text-white shadow-lg">
               <div>
               <h4 className="text-2xl font-bold mb-4">
@@ -31,15 +31,15 @@ const CardMuitasVantagens: React.FC = () => {
                 />
               </div>
             </div>
-            <h5 className="mt-4 text-2xl text-[var(--blue)] text-center">
+            <h5 className="mt-4 text-xl md:text-2xl text-[var(--blue)] text-start md:text-center">
               Quem tem Cartão BrasilCard tem crédito fácil para poder comprar 
               com facilidade e muita tranquilidade para pagar.
             </h5>
           </div>
 
           {/* Banner Lojista */}
-          <div className="custom banner-lojista  p-6 ">
-            <div className="inner flex bg-[var(--green)] pt-4 px-4 rounded-lg text-white shadow-lg">
+          <div className="custom banner-lojista px-1  md:p-6 ">
+            <div className="inner flex bg-[var(--green)] md:pt-4 px-4 rounded-lg text-white shadow-lg">
               <div>
               <h4 className="text-2xl font-bold mb-4">
                 MUITAS FACILIDADES<br />PARA O LOJISTA
@@ -59,7 +59,7 @@ const CardMuitasVantagens: React.FC = () => {
                 />
               </div>
             </div>
-            <h5 className="mt-4 text-2xl text-[var(--green)] text-center">
+            <h5 className="mt-4 text-xl md:text-2xl text-[var(--green)] md:text-center text-start">
               Quem oferece o cartão marca própria BrasilCard a seus clientes
               aumenta a fidelização, o ticket médio e garante o recebimento.
             </h5>
