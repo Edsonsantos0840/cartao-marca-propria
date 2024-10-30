@@ -5,7 +5,6 @@ import benefit2 from '../assets/benefit-2.png'
 import benefit3 from '../assets/benefit-3.png'
 import benefit4 from '../assets/benefit-4.png'
 import circuloAmarelo from '../assets/circle-yellow.png'
-import nova from '../assets/NOVA.png'
 
 interface Benefit {
   icon: string | StaticImageData;

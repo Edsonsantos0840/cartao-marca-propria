@@ -4,12 +4,10 @@ import loginLojista from "../assets/login-lojista.png";
 import aprovação from "../assets/aprovacao-instantanea.png";
 import antecipação from "../assets/antecipacao-de-recebiveis.png";
 import queroSerCredenciado from "../assets/quero-ser-um-credenciado.png";
-import loginCliente from "../assets/login-cliente.png";
 import desbloqueio from "../assets/desbloqueio-de-cartao.png";
 import saibaOndeComprar from "../assets/saiba-onde-comprar.png";
 import negociacaoDeDebito from "../assets/negociacao-de-debito.png";
 import segundaViaFatura from "../assets/segunda-via-fatura.png";
-import Link from "next/dist/client/link";
 
 interface Card {
   title: string;

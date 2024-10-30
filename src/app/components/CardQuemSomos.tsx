@@ -4,7 +4,6 @@ import Link from "next/link";
 import sede from '../assets/foto-sede.jpg'
 import clientes from '../assets/2-milhoes-de-clientes.jpg'
 import tradição from '../assets/20-anos-de-tradicao-e-credibilidade.png'
-import queroSerCredenciado from '../assets/quero-ser-um-credenciado.png'
 
 const CardQuemSomos: React.FC = () => {
   return (

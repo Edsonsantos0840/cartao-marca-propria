@@ -1,8 +1,6 @@
 "use client"; // Caso esteja usando App Router no Next.js 13+
 
-import { useEffect, useRef, useState } from "react";
-
-import desbloqueio from '../assets/Banner_trabalhe_conosco.png'
+import { useRef, useState } from "react";
 
 const CardVideos: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
