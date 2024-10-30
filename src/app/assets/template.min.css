@@ -1,0 +1,931 @@
+    .bg-blue-dark {
+    background-color: #004078
+}
+
+.bg-blue {
+    background-color: #004b89
+}
+
+.bg-blue-lighter {
+    background-color: #ecf8fe
+}
+
+.bg-blue-lighter-bolt {
+    background-color: #88d0cc
+}
+
+.bg-green {
+    background-color: #8ac644
+}
+
+.bg-light {
+    background-color: #f3f3f3 !important
+}
+
+.color-blue-darker {
+    color: #2e4668
+}
+
+.color-blue {
+    color: #004b89
+}
+
+.color-blue-light {
+    color: #0095da
+}
+
+.color-yellow-dark {
+    color: #fdb71e
+}
+
+.color-green {
+    color: #8ac644
+}
+
+.color-green-dark {
+    color: #00a651
+}
+
+.color-orange {
+    color: #f37021
+}
+
+.btn {
+    padding: 5px 20px !important;
+    border-radius: 20px
+}
+
+.btn-blue {
+    background-color: #004b89;
+    color: #fff !important
+}
+
+.btn-blue:hover {
+    background-color: #004078
+}
+
+.btn-yellow {
+    background-color: #ffe500;
+    color: #004b89 !important
+}
+
+.btn-yellow:hover {
+    background-color: #fdb913
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #004b89 !important
+}
+
+.btn-white:hover {
+    background-color: #eee
+}
+
+@font-face {
+    font-family: 'DIN Pro Condensed Black';
+    src: url("../fonts/DINPro-CondBlack.woff2") format("woff2"), url("../fonts/DINPro-CondBlack.woff") format("woff");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'DIN Pro';
+    src: url("../fonts/DINPro-Light.woff2") format("woff2"), url("../fonts/DINPro-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'DIN Pro';
+    src: url("../fonts/DINPro.woff2") format("woff2"), url("../fonts/DINPro.woff") format("woff");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'DIN Pro';
+    src: url("../fonts/DINPro-Bold.woff2") format("woff2"), url("../fonts/DINPro-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'DIN Pro';
+    src: url("../fonts/DINPro-Black.woff2") format("woff2"), url("../fonts/DINPro-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Museo';
+    src: url("../fonts/Museo300-Regular.woff2") format("woff2"), url("Museo300-Regular.woff") format("woff");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Museo';
+    src: url("../fonts/Museo900-Regular.woff2") format("woff2"), url("../fonts/Museo900-Regular.woff") format("woff");
+    font-weight: 900;
+    font-style: normal
+}
+
+h1 {
+    font-size: 67.34px
+}
+
+h2 {
+    font-size: 50.52px
+}
+
+h3 {
+    font-size: 37.9px
+}
+
+h4 {
+    font-size: 28.43px
+}
+
+h5 {
+    font-size: 21.33px
+}
+
+.font-weight-bold {
+    font-weight: bold !important
+}
+
+b,
+strong {
+    font-weight: bold !important
+}
+
+.font-weight-black {
+    font-weight: 900 !important
+}
+
+.font-weight-light {
+    font-weight: 300 !important
+}
+
+.text-blue-lighter {
+    color: #bae6fb !important
+}
+
+.text-green {
+    color: #8ac644 !important
+}
+
+.text-green-light {
+    color: #c6df99 !important
+}
+
+.museo {
+    font-family: 'Museo' !important
+}
+
+h2.museo {
+    line-height: 1em
+}
+
+body {
+    font-family: 'DIN Pro';
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+    padding-top: 80px
+}
+
+a {
+    color: #0095da
+}
+
+a:hover {
+    color: #004b89
+}
+
+.top {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0
+}
+
+.top .menu-button {
+    color: #fff !important;
+    font-size: 28px
+}
+
+.top .navbar-brand img {
+    width: 200px
+}
+
+.main-menu .nav-link {
+    color: #fff
+}
+
+.main-menu .dropdown-toggle {
+    font-weight: bold;
+    text-transform: uppercase
+}
+
+.header img {
+    max-width: 100%
+}
+
+.header h2 {
+    font-size: 37.9px
+}
+
+.header h3 {
+    font-size: 28.43px
+}
+
+.header h4 {
+    font-size: 21.33px
+}
+
+@media (max-width: 992px) {
+    .hidden-sm-down {
+        display: none
+    }
+}
+
+@media (min-width: 1200px) {
+    .header h2 {
+        font-size: 50.52px
+    }
+    .header h3 {
+        font-size: 37.9px
+    }
+    .header h4 {
+        font-size: 28.43px
+    }
+}
+
+.slideshow {
+    width: 100%
+}
+
+.slideshow .custom {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    color: #fff
+}
+
+@media (max-width: 992px) {
+    .slideshow .custom {
+        min-height: 100%
+    }
+}
+
+.slideshow .custom p {
+    margin: 0
+}
+
+.slideshow .custom h2 {
+    font-size: 28.43px
+}
+
+.slideshow .custom h3 {
+    font-size: 21.33px
+}
+
+.slideshow .custom h4 {
+    font-size: 21.33px
+}
+
+.slideshow .custom h5 {
+    font-size: 16px
+}
+
+.slideshow .custom .slide-image {
+    width: 100%;
+    border-bottom: 3px solid #fff
+}
+
+.slideshow .custom .slide-content {
+    z-index: 15
+}
+
+.slideshow .custom .content-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block
+}
+
+@media (min-width: 992px) {
+    .slideshow .custom .slide-image {
+        border: none;
+        width: 140%;
+        margin-left: -25%
+    }
+    .slideshow .custom .content-image {
+        max-width: 450px;
+        margin: 20px auto
+    }
+}
+
+@media (min-width: 1200px) {
+    .imgbolt {
+        width: auto;
+        max-height: 448px
+    }
+    .slideshow .custom .content-image {
+        max-width: 550px;
+        margin: 30px auto
+    }
+}
+
+@media (min-width: 1200px) {
+    .slideshow .custom h2 {
+        font-size: 37.9px
+    }
+    .slideshow .custom h3 {
+        font-size: 28.43px
+    }
+    .slideshow .custom h4 {
+        font-size: 21.33px
+    }
+    .slideshow .custom h5 {
+        font-size: 16px
+    }
+}
+
+@media (min-width: 1420px) {
+    .slideshow .custom h2 {
+        font-size: 50.52px
+    }
+    .slideshow .custom h3 {
+        font-size: 37.9px
+    }
+    .slideshow .custom h4 {
+        font-size: 28.43px
+    }
+    .slideshow .custom h5 {
+        font-size: 21.33px
+    }
+}
+
+@media (min-width: 1420px) {
+    .links {
+        margin-bottom: 4em
+    }
+}
+
+.links .custom a {
+    background: #eee;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #004b89;
+    line-height: 1.2em;
+    transition: all ease 300ms
+}
+
+.links .custom a:hover {
+    text-decoration: none;
+    background: #e3e3e3
+}
+
+.links .custom a img {
+    width: 70px;
+    background: #e3e3e3;
+    padding: 15px;
+    margin-right: 15px;
+    border-radius: 10px 0 0 10px
+}
+
+.links .lojista a {
+    color: #367405
+}
+
+.banners h5 {
+    text-align: center;
+    font-size: 16px
+}
+
+@media (min-width: 576px) {
+    .banners h5 {
+        font-size: 21.33px
+    }
+}
+
+.banners .inner {
+    position: relative;
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    margin-bottom: 1em;
+    border-radius: 10px
+}
+
+@media (min-width: 768px) {
+    .banners .inner {
+        padding: 25px 30px
+    }
+}
+
+.banners .inner img {
+    width: 45%;
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+@media (min-width: 1420px) {
+    .banners .inner img {
+        width: 55%
+    }
+}
+
+.banners .inner h4 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 21.33px
+}
+
+@media (min-width: 576px) {
+    .banners .inner h4 {
+        font-size: 28.43px
+    }
+}
+
+.banners .inner p {
+    margin: 0
+}
+
+.banners .inner a {
+    color: #fff
+}
+
+.banners .banner-cliente .inner {
+    background: #004b89
+}
+
+.banners .banner-cliente h5 {
+    color: #004b89;
+    margin: 0
+}
+
+.banners .banner-lojista .inner {
+    background: #8ac644
+}
+
+.banners .banner-lojista h5 {
+    color: #367405
+}
+
+.benefits {
+    background: url(../images/just-waves.png);
+    overflow: hidden;
+    display: block
+}
+
+.benefits .title {
+    font-size: 28.43px
+}
+
+@media (min-width: 768px) {
+    .benefits .title {
+        font-size: 37.9px
+    }
+}
+
+.benefits .benefit {
+    position: relative
+}
+
+.benefits .benefit img {
+    position: absolute
+}
+
+.benefits .benefit .circle-yellow {
+    top: -45px;
+    left: -15px;
+    width: 130px
+}
+
+@media (min-width: 576px) {
+    .benefits .benefit .circle-yellow {
+        width: 170px
+    }
+}
+
+@media (min-width: 992px) {
+    .benefits .benefit .circle-yellow {
+        width: 200px
+    }
+}
+
+.benefits .benefit .icon {
+    top: -65px;
+    left: -30px;
+    width: 115px
+}
+
+@media (min-width: 576px) {
+    .benefits .benefit .icon {
+        width: 140px
+    }
+}
+
+@media (min-width: 992px) {
+    .benefits .benefit .icon {
+        width: 150px
+    }
+}
+
+.benefits .benefit h2 {
+    color: #004b89;
+    font-weight: 900;
+    position: relative;
+    z-index: 10;
+    padding-left: 70px;
+    font-size: 28.43px
+}
+
+@media (min-width: 576px) {
+    .benefits .benefit h2 {
+        font-size: 37.9px;
+        padding-left: 100px
+    }
+}
+
+@media (min-width: 992px) {
+    .benefits .benefit h2 {
+        font-size: 50.52px;
+        padding-left: 115px
+    }
+}
+
+.news .main-carousel {
+    margin: 0 -20px
+}
+
+.news .main-carousel .custom {
+    padding: 20px;
+    width: 100%
+}
+
+@media (min-width: 992px) {
+    .news .main-carousel .custom {
+        width: 50%
+    }
+}
+
+.news .main-carousel .custom img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important
+}
+
+.news .main-carousel .custom p {
+    margin: 0
+}
+
+.services {
+    display: block;
+    overflow: hidden
+}
+
+.services .col:nth-of-type(2n) .custom:after {
+    left: inherit;
+    right: -790px
+}
+
+.services h1 {
+    font-size: 50.52px
+}
+
+.services h2 {
+    font-size: 37.9px
+}
+
+.services h3 {
+    font-size: 28.43px
+}
+
+.services h4 {
+    font-size: 21.33px
+}
+
+.services h5 {
+    font-size: 16px
+}
+
+@media (min-width: 768px) {
+    .services h1 {
+        font-size: 67.34px
+    }
+    .services h2 {
+        font-size: 50.52px
+    }
+    .services h3 {
+        font-size: 37.9px
+    }
+    .services h4 {
+        font-size: 28.43px
+    }
+    .services h5 {
+        font-size: 21.33px
+    }
+}
+
+@media (min-width: 1200px) {
+    .services h1 {
+        font-size: 50.52px
+    }
+    .services h2 {
+        font-size: 37.9px
+    }
+    .services h3 {
+        font-size: 28.43px
+    }
+    .services h4 {
+        font-size: 21.33px
+    }
+    .services h5 {
+        font-size: 16px
+    }
+}
+
+@media (min-width: 1420px) {
+    .services h1 {
+        font-size: 67.34px
+    }
+    .services h2 {
+        font-size: 50.52px
+    }
+    .services h3 {
+        font-size: 37.9px
+    }
+    .services h4 {
+        font-size: 28.43px
+    }
+    .services h5 {
+        font-size: 21.33px
+    }
+}
+
+.services .custom {
+    position: relative;
+    background: #e0ecf6;
+    padding: 30px;
+    height: 100%;
+    z-index: 10;
+    border-radius: 7px
+}
+
+.services .custom:after {
+    z-index: -1;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 800px;
+    position: absolute;
+    top: 0;
+    left: -790px;
+    background: #e0ecf6
+}
+
+.services .custom p {
+    margin: 0
+}
+
+.services .custom .service-image {
+    display: none;
+    position: absolute;
+    bottom: 0
+}
+
+@media (min-width: 576px) {
+    .services .custom .service-image {
+        display: block
+    }
+}
+
+.services .app .download-apps img {
+    width: 120px
+}
+
+.services .app .service-image {
+    right: 5%;
+    bottom: 20px;
+    width: 30%
+}
+
+@media (min-width: 768px) {
+    .services .app .service-image {
+        width: 27%;
+        right: 8%
+    }
+}
+
+.services .saque-na-hora .service-image {
+    right: 9%;
+    bottom: 20px;
+    width: 42%
+}
+
+@media (min-width: 768px) {
+    .services .saque-na-hora .service-image {
+        width: 40%;
+        right: 13%;
+        bottom: 25px
+    }
+}
+
+.services .aprovacao .service-image {
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 40%
+}
+
+@media (min-width: 768px) {
+    .services .aprovacao .service-image {
+        width: 38%;
+        right: 7%
+    }
+}
+
+.services .recarga .service-image {
+    bottom: 20px;
+    right: 3%;
+    width: 40%
+}
+
+@media (min-width: 768px) {
+    .services .recarga .service-image {
+        width: 39%;
+        right: 5%
+    }
+}
+
+.brasilcard a {
+    color: #2e4668
+}
+
+.brasilcard .brasilcard-photos img {
+    border-radius: 10px
+}
+
+.brasilcard .brasilcard-photos p {
+    margin: 0
+}
+
+.brasilcard .brasilcard-photos .photo-1 {
+    width: 95%;
+    margin-left: 5%
+}
+
+.brasilcard .brasilcard-photos .photo-2 {
+    width: 55%;
+    margin-left: 0%;
+    margin-top: -8%
+}
+
+.brasilcard .brasilcard-photos .photo-3 {
+    position: absolute;
+    right: 15%;
+    bottom: 4%;
+    width: 25%;
+    border-radius: 0
+}
+
+.footer-menus .nav-link {
+    color: #fff
+}
+
+.footer-menus p {
+    margin: 0
+}
+
+.footer .container {
+    border-top: 1px solid rgba(255, 255, 255, 0.25)
+}
+
+.footer .container a {
+    color: #ffe500
+}
+
+.footer .container p {
+    margin: 0
+}
+
+.body-cliente {
+    background: #ecf8fe
+}
+
+.body-cliente .services {
+    padding-bottom: 1em
+}
+
+@media (min-width: 992px) {
+    .body-cliente .services {
+        padding-bottom: 2em
+    }
+}
+
+.body-cliente .cliente-vantagens img {
+    width: 50px;
+    margin-right: 15px
+}
+
+.body-lojista {
+    background: #eef4d4
+}
+
+.body-lojista #wrapper img {
+    max-width: 100%
+}
+
+.body-lojista .lojista-vantagens h4 img {
+    width: 50px;
+    margin-right: 15px
+}
+
+@media (min-width: 1420px) {
+    .body-lojista .sms {
+        margin-top: -7%
+    }
+}
+
+.cliente-aprovacao {
+    background: #ffe500;
+    border-radius: 10px;
+    max-width: 998px;
+    margin: 0 auto;
+    text-align: center
+}
+
+.cliente-aprovacao img {
+    max-width: 100%
+}
+
+@media (min-width: 992px) {
+    .cliente-aprovacao img {
+        position: absolute;
+        transform: translateY(-50%);
+        left: 0px
+    }
+}
+
+.cliente-aprovacao p {
+    position: relative;
+    margin: 0
+}
+
+.cliente-aprovacao .col {
+    position: relative;
+    padding: 1em 2em
+}
+
+@media (min-width: 1200px) {
+    .dropdown:hover>.dropdown-menu {
+        display: block
+    }
+}
+
+@media (min-width: 1420px) {
+    .container {
+        max-width: 1200px
+    }
+}
+
+@media (min-width: 1420px) {
+    .container {
+        max-width: 1366px
+    }
+}
+
+.chronoforms6_credits {
+    display: none !important;
+    opacity: 0
+}
+
+.radius-10 {
+    border-radius: 10px
+}
+
+.ba-form {
+    padding: 0 !important
+}
+
+.ba-form p {
+    display: none
+}
+
+@media (max-width: 1200px) {
+	.imgbolt {
+	    width: auto;
+	    height: 342px
+	}
+}
+
+.bgimageslide {
+	background-image: url("https://bc-assets-website.s3-sa-east-1.amazonaws.com/imagens/FUNDO_BANNER_BOLT.png");
+	background-size: 100%
+}
