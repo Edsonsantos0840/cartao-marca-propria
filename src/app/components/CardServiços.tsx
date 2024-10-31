@@ -62,7 +62,7 @@ const CardServiços: React.FC = () => {
   return (
     <div className="services py-10 bg-gray-50">
       <div className="container mx-auto ">
-        <h3 className="text-center text-3xl font-black text-[var(--blue)] mb-8">
+        <h3 className="text-center text-xl md:text-3xl font-black text-[var(--blue)] mb-8">
           Serviços que vão facilitar sua vida!
         </h3>
 
@@ -70,10 +70,10 @@ const CardServiços: React.FC = () => {
           {servicesData.map((service, index) => (
             <div
               key={index}
-              className="bg-[var(--info)] px-8 py-2 rounded-lg shadow-lg text-center flex"
+              className="bg-[var(--info)] px-3 md:px-8 py-2 rounded-lg shadow-lg text-center flex"
             >
-              <div className="w-[50%] text-start">
-                <h2 className="text-3xl font-black text-[var(--orange)] mb-2">
+              <div className="w-[60%] md:w-[50%] text-start">
+                <h2 className=" text-2xl md:text-3xl font-black text-[var(--orange)] mb-2">
                 {service.title}
               </h2>
               <h4 className="text-blue-900 text-xl font-extrabold">{service.description}</h4>
@@ -87,7 +87,7 @@ const CardServiços: React.FC = () => {
               <h3 className="text-red-900 mt-3 mb-2 text-2xl font-black">{service.ajuste}</h3>
 
               {service.link && (
-                <div className="flex justify-center space-x-3 mt-1">
+                <div className="flex justify-center  mt-1">
                   {service.link.map((linkItem, idx) => (
                     <a
                       key={idx}
@@ -98,8 +98,8 @@ const CardServiços: React.FC = () => {
                       <Image
                         src={linkItem.src}
                         alt={linkItem.alt}
-                        width={250}
-                        height={100}
+                        width={150}
+                        height={20}
                         className="rounded"
                       />
                     </a>
@@ -111,8 +111,8 @@ const CardServiços: React.FC = () => {
                 src={service.image}
                 alt={service.title}
                 width={150}
-                height={100}
-                className="mx-auto mb-4"
+                height={20}
+                className="mx-auto md:mb-4"
               />
 
             </div>
