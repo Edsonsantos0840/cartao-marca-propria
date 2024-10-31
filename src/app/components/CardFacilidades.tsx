@@ -39,29 +39,29 @@ const CardFacilidades: React.FC = () => {
   return (
     <div className="benefits pt-10 bg-[#0099ff1c]  " >
       <div className="container px-0 md:px-4">
-        <h3 className="text-center text-2xl md:text-4xl font-extralight text-blue-900 md:mb-2">
+        <h3 className="text-center text-2xl md:text-4xl font-extralight text-blue-900 lg:mb-2">
           Veja como é fácil fazer o seu BrasilCard e confira as vantagens:
         </h3>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-8">
           {BenefitsCard.map((benefit, index) => (
             <div
               key={index}
-              className="benefit relative p-3 md:p-6  flex flex-col items-start"
+              className="benefit relative  lg:p-6  flex flex-col items-start"
             >
               <Image
                 src={circuloAmarelo}
                 alt="Ícone círculo amarelo"
                 width={280}
                 height={280}
-                className="md:mb-4 md:mt-4 "
+                className="lg:mb-4 lg:mt-4 "
               />
               <Image
                 src={benefit.icon}
                 alt={benefit.title}
                 width={230}
                 height={230}
-                className="md:mb-4 absolute left-[0px] "
+                className="lg:mb-4 absolute left-[0px] "
               />
               <h2 className="text-3xl md:text-5xl font-extrabold absolute text-start w-[60%] text-[var(--blue)] left-[150px] top-[160px] md:left-[140px] md:top-[140px]">
                 {benefit.title}
