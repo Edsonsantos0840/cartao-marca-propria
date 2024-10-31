@@ -16,9 +16,9 @@ const Navbar: React.FC = () => {
             <Image
               src={img}
               alt="BrasilCard"
-              width={130}
-              height={55}
-              className=" p-2 md:w-[200px]  lg:w-[250px]"
+              width={145}
+              height={58}
+              className=" p-2 md:w-[250px]  lg:w-[310px]"
             />
           </Link>
           <button
