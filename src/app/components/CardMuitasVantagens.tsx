@@ -59,7 +59,7 @@ const CardMuitasVantagens: React.FC = () => {
                 />
               </div>
             </div>
-            <h5 className="mt-4 text-xl md:text-2xl text-[var(--green)] md:text-center text-start">
+            <h5 className="mt-4 text-xl md:text-2xl text-[var(--success)] lg:text-[var(--green)] md:text-center text-start">
               Quem oferece o cartão marca própria BrasilCard a seus clientes
               aumenta a fidelização, o ticket médio e garante o recebimento.
             </h5>
