@@ -15,6 +15,8 @@ interface Service {
   ajuste?: string;
   largura?: number;
   altura?: number;
+  mdlargura?: string;
+  mdaltura?: string;
   link?: {
     href: string;
     src: string | StaticImageData;
@@ -72,7 +74,7 @@ const servicesData: Service[] = [
 
 const CardServiços: React.FC = () => {
   return (
-    <div className="services py-5 md:py-10 bg-gray-50">
+    <div className="services py-5 md:py-10 bg-gray-50 ">
       <div className="container mx-auto ">
         <h3 className="text-center text-xl md:text-3xl font-black text-[var(--blue)] mb-5 md:mb-8">
           Serviços que vão facilitar sua vida!
@@ -82,24 +84,24 @@ const CardServiços: React.FC = () => {
           {servicesData.map((service, index) => (
             <div
               key={index}
-              className="bg-[var(--info)] px-3 md:px-8 py-2 rounded-lg shadow-lg text-center flex"
+              className="bg-[var(--info)] px-3 md:pl-8 py-2 rounded-lg shadow-lg flex justify-between"
             >
               <div className="w-[55%] md:w-[50%] text-start">
-                <h2 className=" text-2xl md:text-3xl font-black text-[var(--orange)] mb-2">
+                <h2 className=" text-2xl md:text-4xl font-black text-[var(--orange)] mb-2">
                 {service.title}
               </h2>
-              <h4 className="text-blue-900 text-lg font-extrabold">{service.description}</h4>
+              <h4 className="text-blue-900 text-lg md:text-2xl font-extrabold">{service.description}</h4>
 
               {service.subtitle && (
-                <h5 className="text-blue-500 mt-3 mb-2 text-xl">
+                <h5 className="text-blue-500 mt-3 mb-2 text-xl md:text-2xl">
                   {service.subtitle}
                 </h5>
                 
               )}
-              <h3 className="text-red-900 mt-3 mb-2 text-2xl font-black">{service.ajuste}</h3>
+              <h3 className="text-red-900 mt-3 mb-2 text-2xl md:text-3xl font-black">{service.ajuste}</h3>
 
               {service.link && (
-                <div className="flex   mt-1">
+                <div className="flex mt-1 ">
                   {service.link.map((linkItem, idx) => (
                     <a
                       key={idx}
@@ -112,7 +114,7 @@ const CardServiços: React.FC = () => {
                         alt={linkItem.alt}
                         width={100}
                         height={40}
-                        className="rounded"
+                        className="rounded left-2 "
                       />
                     </a>
                   ))}
@@ -124,7 +126,7 @@ const CardServiços: React.FC = () => {
                 alt={service.title}
                 width={service.largura}
                 height={service.altura}
-                className=" md:mb-4 m-0"
+                className={`md:mb-4 m-0 md:w-[32%] `}
               />
 
             </div>
