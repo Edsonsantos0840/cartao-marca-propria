@@ -13,6 +13,8 @@ interface Service {
   description: string;
   subtitle?: string;
   ajuste?: string;
+  largura?: number;
+  altura?: number;
   link?: {
     href: string;
     src: string | StaticImageData;
@@ -26,6 +28,8 @@ const servicesData: Service[] = [
     title: "Aplicativo Brasilcard",
     description: "Informações online na palma da mão.",
     subtitle: "Baixe gratuitamente nas plataformas",
+    largura: 130 ,
+    altura: 245,
     link: [
       {
         href: "",
@@ -42,19 +46,27 @@ const servicesData: Service[] = [
   {
     image: saqueNaHora,
     title: "Precisou de dinheiro?",
-    description: "Com o Saque na Hora você pode retirar até 40% do seu limite.",
+    description: "Com o Saque na Hora você pode retirar até 40%",
+    ajuste: " do seu limite",
+    largura: 209,
+    altura: 268,
   },
   {
     image: aprovacaoInstantanea,
-    title: "Aprovação Instantânea BrasilCard",
+    title: "Aprovação Instantânea ",
     description: "O cartão é aprovado em apenas ",
-    ajuste: "00:01 segundo."
+    ajuste: "00:01 segundo.",
+    largura: 190,
+    altura: 110,
   },
   {
     image: celular2,
     title: "Recarga para celular",
     description:
-      "Basta enviar um SMS GRATUITO com a palavra BCARGA para o número 28595.",
+      "Basta enviar um SMS GRATUITO com a palavra BCARGA para o",
+      ajuste: " número 28595",
+      largura: 180 ,
+    altura: 239,
   },
 ];
 
@@ -72,7 +84,7 @@ const CardServiços: React.FC = () => {
               key={index}
               className="bg-[var(--info)] px-3 md:px-8 py-2 rounded-lg shadow-lg text-center flex"
             >
-              <div className="w-[60%] md:w-[50%] text-start">
+              <div className="w-[55%] md:w-[50%] text-start">
                 <h2 className=" text-2xl md:text-3xl font-black text-[var(--orange)] mb-2">
                 {service.title}
               </h2>
@@ -87,7 +99,7 @@ const CardServiços: React.FC = () => {
               <h3 className="text-red-900 mt-3 mb-2 text-2xl font-black">{service.ajuste}</h3>
 
               {service.link && (
-                <div className="flex justify-between  mt-1">
+                <div className="flex   mt-1">
                   {service.link.map((linkItem, idx) => (
                     <a
                       key={idx}
@@ -110,9 +122,9 @@ const CardServiços: React.FC = () => {
               <Image
                 src={service.image}
                 alt={service.title}
-                width={150}
-                height={20}
-                className="mx-auto md:mb-4"
+                width={service.largura}
+                height={service.altura}
+                className=" md:mb-4 m-0"
               />
 
             </div>

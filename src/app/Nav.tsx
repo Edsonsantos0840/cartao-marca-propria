@@ -10,15 +10,15 @@ const Navbar: React.FC = () => {
 
   return (
     <div className="bg-[var(--indigo)] shadow-xl py-2 ">
-      <div className="container md:mx-auto px-1 md:px-4 hidden md:flex lg:px-2 lg:flex lg:justify-center">
+      <div className="container md:mx-auto px-0 md:px-4 hidden md:flex lg:px-2 lg:flex lg:justify-center">
         <nav className="flex items-center justify-between md:gap-10">
           <Link href="/">
             <Image
               src={img}
               alt="BrasilCard"
-              width={145}
-              height={58}
-              className=" p-2 md:w-[250px]  lg:w-[310px]"
+              width={380}
+              height={88}
+              className=" p-0 md:w-[250px]  lg:w-[310px]"
             />
           </Link>
           <button
@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
             <ul className="flex flex-col lg:flex-row lg:ml-auto lg:space-x-6 text-white">
               
               <li className="group relative z-20">
-                <a className="cursor-pointer font-extrabold flex items-center justify-center gap-4 md:text-xl ">MENU DO  <span className='text-[var(--green)] font-extrabold' > LOJISTA </span><FaCaretDown /></a>
+                <a className="cursor-pointer font-extrabold flex items-center justify-center md:gap-4 md:text-xl ">MENU DO  <span className='text-[var(--green)] font-extrabold' > LOJISTA </span><FaCaretDown /></a>
                 <div className="absolute hidden group-hover:block bg-white text-black shadow-lg mt-0 p-2 rounded-sm">
                   <Link href="https://www.brasilcard.net/bca/cliente/certificado/" target='_blank' className="block px-1 py-2 hover:scale-110 hover:bg-slate-100">Login Lojista</Link>
                   <Link href="https://www.brasilcard.net/bca/cliente/login?page=desbloqueioCartao" target='_blank' className="block px-1 py-2 hover:scale-110 hover:bg-slate-100">Desbloqueie o cartão</Link>
@@ -89,9 +89,9 @@ const Navbar: React.FC = () => {
             <Image
               src={img}
               alt="BrasilCard"
-              width={130}
-              height={55}
-              className=" p-2 md:w-[200px] md:h-[75]"
+              width={150}
+              height={36}
+              className=" p-0 md:w-[200px] "
             />
           </Link>
           <button
@@ -110,7 +110,7 @@ const Navbar: React.FC = () => {
             <ul className="flex flex-col lg:flex-row lg:ml-auto lg:space-x-6 text-white">
               
               <li className="group relative z-20">
-                <a className="cursor-pointer font-extrabold flex items-center justify-center gap-4">MENU DO  <span className='text-[var(--green)] font-extrabold' > LOJISTA </span><FaCaretDown /></a>
+                <a className="cursor-pointer font-extrabold flex items-center justify-center gap-2 text-base">MENU DO  <span className='text-[var(--green)] font-extrabold' > LOJISTA </span><FaCaretDown /></a>
                 <div className="absolute hidden group-hover:block bg-white text-black shadow-lg mt-0 p-2 rounded-sm">
                   <Link href="https://www.brasilcard.net/bca/cliente/certificado/" target='_blank' className="block px-1 py-2 hover:scale-110 hover:bg-slate-100">Login Lojista</Link>
                   <Link href="https://www.brasilcard.net/bca/cliente/login?page=desbloqueioCartao" target='_blank' className="block px-1 py-2 hover:scale-110 hover:bg-slate-100">Desbloqueie o cartão</Link>

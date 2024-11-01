@@ -68,12 +68,12 @@ const MobileSlide: React.FC = () => {
       </button>
 
       {/* Indicadores */}
-      <div className="absolute bottom-1 right-0 transform -translate-x-1/2 flex space-x-2 bg-[#0000001f] p-2 rounded-md">
+      <div className="absolute bottom-[1px] right-0 transform -translate-x-1/2 flex space-x-2  p-2 rounded-md">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-2 h-2 rounded-full ${currentIndex === index ? 'bg-white' : 'bg-[#fcfcfc0e]'}`}
+            className={`w-2 h-2 rounded-full ${currentIndex === index ? 'bg-white' : 'bg-[#30303031]'}`}
           />
         ))}
       </div>

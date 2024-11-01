@@ -13,7 +13,7 @@ const CardMuitasVantagens: React.FC = () => {
           <div className="custom banner-cliente  md:p-6  ">
             <div className="inner flex bg-[var(--blue)] pt-4 px-4 rounded-lg text-white shadow-lg">
               <div>
-              <h4 className="text-2xl font-bold mb-4">
+              <h4 className="text-xl md:text-2xl font-bold mb-4">
                 MUITAS VANTAGENS<br />PARA O CLIENTE
               </h4>
               <p className="mb-4">
@@ -26,8 +26,8 @@ const CardMuitasVantagens: React.FC = () => {
                 <Image
                   src={mulher}
                   alt="Vantagens para cliente"
-                  width={250}
-                  height={250}
+                  width={627}
+                  height={408}
                 />
               </div>
             </div>
@@ -41,7 +41,7 @@ const CardMuitasVantagens: React.FC = () => {
           <div className="custom banner-lojista px-1  md:p-6 ">
             <div className="inner flex bg-[var(--green)] md:pt-4 px-4 rounded-lg text-white shadow-lg">
               <div>
-              <h4 className="text-2xl font-bold mb-4">
+              <h4 className="text-xl md:text-2xl font-bold mb-4">
                 MUITAS FACILIDADES<br />PARA O LOJISTA
               </h4>
               <p className="mb-4">
@@ -54,8 +54,8 @@ const CardMuitasVantagens: React.FC = () => {
                 <Image
                   src={homem}
                   alt="Facilidades para lojista"
-                  width={250}
-                  height={250}
+                  width={627}
+                  height={408}
                 />
               </div>
             </div>

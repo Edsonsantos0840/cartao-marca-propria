@@ -26,14 +26,14 @@ const CardQuemSomos: React.FC = () => {
               src={clientes}
               alt="2 milhões de clientes"
               width={150}
-              height={100}
+              height={90}
               className="photo-2 shadow-lg rounded-md absolute z-20 left-2 lg:left-0 top-[225px] lg:top-[320px] lg:w-[280]"
             />
             <Image
               src={tradição}
               alt="20 anos de tradição e credibilidade"
               width={85}
-              height={80}
+              height={48}
               className="photo-3 absolute z-20 lg:top-[410px] lg:w-[150]" 
             />
 
