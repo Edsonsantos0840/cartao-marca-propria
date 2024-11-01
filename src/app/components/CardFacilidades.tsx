@@ -54,16 +54,16 @@ const CardFacilidades: React.FC = () => {
                 alt="Ícone círculo amarelo"
                 width={207}
                 height={207}
-                className="lg:mb-4 lg:mt-4 "
+                className="lg:mb-4 md:w-[250px] lg:mt-4 "
               />
               <Image
                 src={benefit.icon}
                 alt={benefit.title}
                 width={150}
                 height={150}
-                className="lg:mb-4 absolute left-[0px] "
+                className="lg:mb-4 absolute md:w-[180px] left-[0px] "
               />
-              <h2 className="text-2xl md:text-5xl font-extrabold absolute text-start w-[60%] text-[var(--blue)] left-[120px] top-[90px] md:left-[140px] md:top-[140px]">
+              <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold absolute text-start w-[60%] text-[var(--blue)] left-[120px] top-[90px] md:left-[140px] md:top-[100px] lg:top-[140px]">
                 {benefit.title}
               </h2>
             </div>
