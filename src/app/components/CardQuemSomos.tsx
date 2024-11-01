@@ -1,10 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import sede from '../assets/foto-sede.jpg'
-import clientes from '../assets/2-milhoes-de-clientes.jpg'
-import tradição from '../assets/20-anos-de-tradicao-e-credibilidade.png'
-
 const CardQuemSomos: React.FC = () => {
   return (
     <div className="brasilcard md:py-10 bg-white md:mb-24">
@@ -15,7 +11,7 @@ const CardQuemSomos: React.FC = () => {
           {/* Imagens da BrasilCard */}
           <div className="lg:w-1/2 flex flex-col items-center  space-y-6  relative">
             <Image
-              src={sede}
+              src='/foto-sede.jpg'
               alt="Foto da sede BrasilCard"
               width={550}
               height={380}
@@ -23,14 +19,14 @@ const CardQuemSomos: React.FC = () => {
             />
             <div className="flex ">
             <Image
-              src={clientes}
+              src='/2-milhoes-de-clientes.jpg'
               alt="2 milhões de clientes"
               width={150}
               height={90}
               className="photo-2 shadow-lg rounded-md absolute z-20 left-2 md:left-[10px] lg:left-0 top-[248px] md:top-[330px] lg:top-[320px] lg:w-[280]"
             />
             <Image
-              src={tradição}
+              src='/20-anos-de-tradicao-e-credibilidade.png'
               alt="20 anos de tradição e credibilidade"
               width={85}
               height={48}

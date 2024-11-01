@@ -1,76 +1,6 @@
-import Image, { StaticImageData } from "next/image";
-
-import android from '../assets/android.png'
-import celular from '../assets/celular-1.png'
-import celular2 from '../assets/celular-2.png'
-import ios from '../assets/ios.png'
-import saqueNaHora from '../assets/saque-na-hora.png'
-import aprovacaoInstantanea from '../assets/aprovacao-instantanea(1).png'
-
-interface Service {
-  image: string | StaticImageData;
-  title: string;
-  description: string;
-  subtitle?: string;
-  ajuste?: string;
-  largura?: number;
-  altura?: number;
-  mdlargura?: string;
-  mdaltura?: string;
-  link?: {
-    href: string;
-    src: string | StaticImageData;
-    alt: string;
-  }[];
-}
-
-const servicesData: Service[] = [
-  {
-    image: celular,
-    title: "Aplicativo Brasilcard",
-    description: "Informações online na palma da mão.",
-    subtitle: "Baixe gratuitamente nas plataformas",
-    largura: 130 ,
-    altura: 245,
-    link: [
-      {
-        href: "",
-        src: android,
-        alt: "Android",
-      },
-      {
-        href: "",
-        src: ios,
-        alt: "iOS",
-      },
-    ],
-  },
-  {
-    image: saqueNaHora,
-    title: "Precisou de dinheiro?",
-    description: "Com o Saque na Hora você pode retirar até 40%",
-    ajuste: " do seu limite",
-    largura: 209,
-    altura: 268,
-  },
-  {
-    image: aprovacaoInstantanea,
-    title: "Aprovação Instantânea ",
-    description: "O cartão é aprovado em apenas ",
-    ajuste: "00:01 segundo.",
-    largura: 190,
-    altura: 110,
-  },
-  {
-    image: celular2,
-    title: "Recarga para celular",
-    description:
-      "Basta enviar um SMS GRATUITO com a palavra BCARGA para o",
-      ajuste: " número 28595",
-      largura: 180 ,
-    altura: 239,
-  },
-];
+import Image from "next/image";
+import { servicesData } from "./arquivos/ArquivoVantagens";
+import Link from "next/link";
 
 const CardServiços: React.FC = () => {
   return (
@@ -103,7 +33,7 @@ const CardServiços: React.FC = () => {
               {service.link && (
                 <div className="flex mt-1 ">
                   {service.link.map((linkItem, idx) => (
-                    <a
+                    <Link
                       key={idx}
                       href={linkItem.href}
                       target="_blank"
@@ -116,7 +46,7 @@ const CardServiços: React.FC = () => {
                         height={40}
                         className="rounded left-2 "
                       />
-                    </a>
+                    </Link>
                   ))}
                 </div>
               )}
@@ -126,7 +56,7 @@ const CardServiços: React.FC = () => {
                 alt={service.title}
                 width={service.largura}
                 height={service.altura}
-                className={`md:mb-4 m-0 md:w-[32%] `}
+                className={`md:mb-4 m-0 md:w-[32%] lg:w-[50%] xl:w-[35%] `}
               />
 
             </div>

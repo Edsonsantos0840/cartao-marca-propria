@@ -1,9 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import homem from '../assets/homem.png'
-import mulher from '../assets/mulher.png'
-
 const CardMuitasVantagens: React.FC = () => {
   return (
     <div className="banners bg-gray-100 py-4 md:py-8">
@@ -24,7 +21,7 @@ const CardMuitasVantagens: React.FC = () => {
               </div>
               <div className="flex justify-center">
                 <Image
-                  src={mulher}
+                  src='/mulher.png'
                   alt="Vantagens para cliente"
                   width={627}
                   height={408}
@@ -52,7 +49,7 @@ const CardMuitasVantagens: React.FC = () => {
               </div>
               <div className="flex justify-center">
                 <Image
-                  src={homem}
+                  src='/homem.png'
                   alt="Facilidades para lojista"
                   width={627}
                   height={408}

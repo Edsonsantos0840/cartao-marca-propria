@@ -1,39 +1,40 @@
 import Image, { StaticImageData } from "next/image";
+import { BenefitsCard } from "./arquivos/ArquivoVantagens";
 
-import benefit from '../assets/benefit-1.png'
-import benefit2 from '../assets/benefit-2.png'
-import benefit3 from '../assets/benefit-3.png'
-import benefit4 from '../assets/benefit-4.png'
-import circuloAmarelo from '../assets/circle-yellow.png'
+// import benefit from '../assets/benefit-1.png'
+// import benefit2 from '../assets/benefit-2.png'
+// import benefit3 from '../assets/benefit-3.png'
+// import benefit4 from '../assets/benefit-4.png'
+// import circuloAmarelo from '../assets/circle-yellow.png'
 
-interface Benefit {
-  icon: string | StaticImageData;
-  title: string;
-  description: string;
-}
+// interface Benefit {
+//   icon: string | StaticImageData;
+//   title: string;
+//   description: string;
+// }
 
-const BenefitsCard: Benefit[] = [
-  {
-    icon: benefit,
-    title: "Sem comprovação de renda e endereço",
-    description: "",
-  },
-  {
-    icon: benefit2,
-    title: "Sem anuidade e taxa de adesão",
-    description: "",
-  },
-  {
-    icon: benefit3,
-    title: "A aprovação é instantânea",
-    description: "",
-  },
-  {
-    icon: benefit4,
-    title: "Até 45 dias para pagar a fatura",
-    description: "",
-  },
-];
+// const BenefitsCard: Benefit[] = [
+//   {
+//     icon: benefit,
+//     title: "Sem comprovação de renda e endereço",
+//     description: "",
+//   },
+//   {
+//     icon: benefit2,
+//     title: "Sem anuidade e taxa de adesão",
+//     description: "",
+//   },
+//   {
+//     icon: benefit3,
+//     title: "A aprovação é instantânea",
+//     description: "",
+//   },
+//   {
+//     icon: benefit4,
+//     title: "Até 45 dias para pagar a fatura",
+//     description: "",
+//   },
+// ];
 
 const CardFacilidades: React.FC = () => {
   return (
@@ -50,7 +51,7 @@ const CardFacilidades: React.FC = () => {
               className="benefit relative  lg:p-6  flex flex-col items-start"
             >
               <Image
-                src={circuloAmarelo}
+                src='/circle-yellow.png'
                 alt="Ícone círculo amarelo"
                 width={207}
                 height={207}
@@ -63,7 +64,7 @@ const CardFacilidades: React.FC = () => {
                 height={150}
                 className="lg:mb-4 absolute md:w-[180px] left-[0px] "
               />
-              <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold absolute text-start w-[60%] text-[var(--blue)] left-[120px] top-[90px] md:left-[140px] md:top-[100px] lg:top-[140px]">
+              <h2 className="text-2xl md:text-4xl lg:text-4xl font-extrabold absolute text-start w-[60%] text-[var(--blue)] left-[120px] top-[90px] md:left-[140px] md:top-[100px] lg:top-[140px]">
                 {benefit.title}
               </h2>
             </div>
