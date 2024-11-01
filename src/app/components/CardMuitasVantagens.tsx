@@ -31,7 +31,7 @@ const CardMuitasVantagens: React.FC = () => {
                 />
               </div>
             </div>
-            <h5 className="mt-4 text-xl md:text-2xl text-[var(--blue)] text-start md:text-center">
+            <h5 className="mt-4 text-xl md:text-3xl text-[var(--blue)] text-start md:text-center">
               Quem tem Cartão BrasilCard tem crédito fácil para poder comprar 
               com facilidade e muita tranquilidade para pagar.
             </h5>
@@ -59,7 +59,7 @@ const CardMuitasVantagens: React.FC = () => {
                 />
               </div>
             </div>
-            <h5 className="mt-4 text-xl md:text-2xl text-[var(--success)] lg:text-[var(--green)] md:text-center text-start">
+            <h5 className="mt-4 text-xl md:text-3xl text-[var(--success)] lg:text-[var(--green)] md:text-center text-start">
               Quem oferece o cartão marca própria BrasilCard a seus clientes
               aumenta a fidelização, o ticket médio e garante o recebimento.
             </h5>
