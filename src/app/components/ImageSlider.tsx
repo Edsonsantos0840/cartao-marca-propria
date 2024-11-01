@@ -37,7 +37,7 @@ const ImageSlider: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full max-w-full mx-auto overflow-hidden hidden md:block">
+    <div className="relative w-full max-w-full mx-auto overflow-hidden hidden lg:block">
       <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {images.map((image, index) => (
           <div key={index} className="min-w-full w-full ">
