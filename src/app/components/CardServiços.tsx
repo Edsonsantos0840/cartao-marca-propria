@@ -88,7 +88,7 @@ const CardServiços: React.FC = () => {
                 <h2 className=" text-2xl md:text-3xl font-black text-[var(--orange)] mb-2">
                 {service.title}
               </h2>
-              <h4 className="text-blue-900 text-xl font-extrabold">{service.description}</h4>
+              <h4 className="text-blue-900 text-lg font-extrabold">{service.description}</h4>
 
               {service.subtitle && (
                 <h5 className="text-blue-500 mt-3 mb-2 text-xl">
