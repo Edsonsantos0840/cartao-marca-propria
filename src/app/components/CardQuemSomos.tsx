@@ -27,14 +27,14 @@ const CardQuemSomos: React.FC = () => {
               alt="2 milhões de clientes"
               width={150}
               height={90}
-              className="photo-2 shadow-lg rounded-md absolute z-20 left-2 lg:left-0 top-[248px] lg:top-[320px] lg:w-[280]"
+              className="photo-2 shadow-lg rounded-md absolute z-20 left-2 md:left-[10px] lg:left-0 top-[248px] md:top-[330px] lg:top-[320px] lg:w-[280]"
             />
             <Image
               src={tradição}
               alt="20 anos de tradição e credibilidade"
               width={85}
               height={48}
-              className="photo-3 absolute z-20 top-[290px] left-[170px] md:left-[230px] lg:left-[320] lg:top-[410px] lg:w-[150]" 
+              className="photo-3 absolute z-20 top-[290px] md:top-[380px] left-[170px] md:left-[170px] lg:left-[320] lg:top-[410px] lg:w-[150]" 
             />
 
             </div>
