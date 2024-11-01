@@ -7,9 +7,9 @@ import tradição from '../assets/20-anos-de-tradicao-e-credibilidade.png'
 
 const CardQuemSomos: React.FC = () => {
   return (
-    <div className="brasilcard py-10 bg-white mb-24">
-      <div className="container mx-auto px-4">
-        <hr className="block lg:hidden mb-6" />
+    <div className="brasilcard md:py-10 bg-white md:mb-24">
+      <div className="container mx-auto md:px-4">
+        <hr className="block lg:hidden md:mb-6" />
 
         <div className="flex flex-col lg:flex-row items-center space-y-8 lg:space-y-0 lg:space-x-10 ">
           {/* Imagens da BrasilCard */}
@@ -25,27 +25,27 @@ const CardQuemSomos: React.FC = () => {
             <Image
               src={clientes}
               alt="2 milhões de clientes"
-              width={280}
-              height={220}
-              className="photo-2 shadow-lg rounded-md absolute z-20 left-0 top-[320px]"
+              width={150}
+              height={100}
+              className="photo-2 shadow-lg rounded-md absolute z-20 left-2 lg:left-0 top-[225px] lg:top-[320px] lg:w-[280]"
             />
             <Image
               src={tradição}
               alt="20 anos de tradição e credibilidade"
-              width={150}
-              height={120}
-              className="photo-3 absolute z-20 ml-5 top-[410px]" 
+              width={85}
+              height={80}
+              className="photo-3 absolute z-20 lg:top-[410px] lg:w-[150]" 
             />
 
             </div>
      </div>
 
           {/* Texto informativo */}
-          <div className="lg:w-1/2 pt-4 lg:pl-5">
-            <h4 className="text-yellow-600 font-bold text-3xl mb-2">
+          <div className="lg:w-1/2 py-8 px-4 lg:pt-4 lg:pl-5">
+            <h4 className="text-yellow-600 font-bold text-2xl lg:text-3xl mb-2">
               Quem é a BrasilCard?
             </h4>
-            <h4 className="text-[var(--blue)] font-light text-3xl mb-4">
+            <h4 className="text-[var(--blue)] font-light text-2xl lg:text-3xl mb-4">
               Uma das administradoras de cartão que mais cresce no Brasil.
             </h4>
             <p className="text-gray-700 mb-4 text-md">
@@ -57,7 +57,7 @@ const CardQuemSomos: React.FC = () => {
               Leia mais
             </Link>
 
-            <h4 className="text-yellow-600 font-bold text-3xl mt-6 mb-2">
+            <h4 className="text-yellow-600 font-bold text-2xl lg:text-3xl mt-6 mb-2">
               A BrasilCard é uma empresa do <br /> GRUPO ADRIANO COBUCCIO
             </h4>
             <Link

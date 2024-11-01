@@ -49,24 +49,24 @@ const ImageSlider: React.FC = () => {
       {/* Botões de navegação */}
       <button
         onClick={handlePrevious}
-        className="absolute top-1/2 left-1 transform -translate-y-1/2 bg-[var(--light)] p-2 rounded-full shadow-lg"
+        className="absolute top-1/2 text-white left-1 transform -translate-y-1/2 bg-[var(--light)] p-2 rounded-full shadow-lg"
       >
-        -
+        ◀
       </button>
       <button
         onClick={handleNext}
-        className="absolute top-1/2 right-1 transform -translate-y-1/2 bg-[var(--light)] p-2 rounded-full shadow-lg"
+        className="absolute top-1/2 right-1 text-white transform -translate-y-1/2 bg-[var(--light)] p-2 rounded-full shadow-lg"
       >
-     -
+     ▶
       </button>
 
       {/* Indicadores */}
-      <div className="absolute bottom-1 right-0 transform -translate-x-1/2 flex space-x-2 bg-[#0000001f] p-2 rounded-md">
+      <div className="absolute bottom-1 right-0 transform -translate-x-1/2 flex space-x-2 ">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-2 h-2 rounded-full ${currentIndex === index ? 'bg-white' : 'bg-[#fcfcfc0e]'}`}
+            className={`w-2 h-2 rounded-full ${currentIndex === index ? 'bg-white' : 'bg-[#fcfcfc42]'}`}
           />
         ))}
       </div>

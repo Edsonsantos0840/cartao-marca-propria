@@ -60,9 +60,9 @@ const servicesData: Service[] = [
 
 const CardServiços: React.FC = () => {
   return (
-    <div className="services py-10 bg-gray-50">
+    <div className="services py-5 md:py-10 bg-gray-50">
       <div className="container mx-auto ">
-        <h3 className="text-center text-xl md:text-3xl font-black text-[var(--blue)] mb-8">
+        <h3 className="text-center text-xl md:text-3xl font-black text-[var(--blue)] mb-5 md:mb-8">
           Serviços que vão facilitar sua vida!
         </h3>
 
@@ -87,7 +87,7 @@ const CardServiços: React.FC = () => {
               <h3 className="text-red-900 mt-3 mb-2 text-2xl font-black">{service.ajuste}</h3>
 
               {service.link && (
-                <div className="flex justify-center  mt-1">
+                <div className="flex justify-between  mt-1">
                   {service.link.map((linkItem, idx) => (
                     <a
                       key={idx}
@@ -98,8 +98,8 @@ const CardServiços: React.FC = () => {
                       <Image
                         src={linkItem.src}
                         alt={linkItem.alt}
-                        width={150}
-                        height={20}
+                        width={100}
+                        height={40}
                         className="rounded"
                       />
                     </a>

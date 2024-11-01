@@ -12,29 +12,6 @@
 }
 
 :root {
-  --blue:#01295f;--indigo:#00233f;--purple:#034d8b;--pink:#e83e8c;--red:#dc3545;--orange:#fd7e14;--yellow:#ffda07;--green:#c3d933;--teal:#20c997;--cyan:#4695bc;--white:#fff;--gray:#6c757d;--gray-dark:#343a40;--primary:#007bff;--secondary:#dbcc35;--success:#4d8b3b;--info:#19a0ee1a;--warning:#ffc107;--danger:#dc3545;--light:#f8f9fa18;--dark:#343a40;
+  --blue:#01295f;--indigo:#00233f;--purple:#034d8b;--pink:#e83e8c;--red:#dc3545;--orange:#fd7e14;--yellow:#ffda07;--green:#c3d933;--teal:#20c997;--cyan:#4695bc;--white:#fff;--gray:#6c757d;--gray-dark:#343a40;--primary:#007bff;--secondary:#dbcc35;--success:#4d8b3b;--info:#19a0ee1a;--warning:#ffc107;--danger:#dc3545;--light:#03030385;--dark:#343a40;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}

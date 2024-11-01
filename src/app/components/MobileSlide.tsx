@@ -56,15 +56,15 @@ const MobileSlide: React.FC = () => {
       {/* Botões de navegação */}
       <button
         onClick={handlePrevious}
-        className="absolute top-1/2 left-1 transform -translate-y-1/2 bg-[var(--light)] p-2 rounded-full shadow-lg"
+        className="absolute top-1/2 left-[2px] text-white transform -translate-y-1/2 bg-[var(--light)] p-2 rounded-full shadow-lg"
       >
-        -
+        ◀
       </button>
       <button
         onClick={handleNext}
-        className="absolute top-1/2 right-1 transform -translate-y-1/2 bg-[var(--light)] p-2 rounded-full shadow-lg"
+        className="absolute top-1/2  right-[2px] text-white transform -translate-y-1/2 bg-[var(--light)] p-2 rounded-full shadow-lg"
       >
-     -
+     ▶
       </button>
 
       {/* Indicadores */}
