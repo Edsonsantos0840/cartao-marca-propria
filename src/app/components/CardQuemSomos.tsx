@@ -34,7 +34,7 @@ const CardQuemSomos: React.FC = () => {
               alt="20 anos de tradição e credibilidade"
               width={85}
               height={48}
-              className="photo-3 absolute z-20 top-[290px] left-[170px] lg:top-[410px] lg:w-[150]" 
+              className="photo-3 absolute z-20 top-[290px] left-[170px] md:left-[230px] lg:left-[320] lg:top-[410px] lg:w-[150]" 
             />
 
             </div>
