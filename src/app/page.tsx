@@ -1,4 +1,4 @@
-
+import {whats} from './components/arquivos/ArquivoRepresentante'
 import CardFacilidades from "./components/CardFacilidades";
 import CardMuitasVantagens from "./components/CardMuitasVantagens";
 import CardQuemSomos from "./components/CardQuemSomos";
@@ -6,7 +6,6 @@ import CardServiços from "./components/CardServiços";
 import CardVideos from "./components/CardVideos";
 import ImageSlider from "./components/ImageSlider";
 import Vantagens from "./components/Vantagens";
-import Footer from "./Footer";
 import Links from "./components/CardLink";
 import MobileSlide from "./components/MobileSlide";
 
@@ -15,16 +14,15 @@ export default function Home() {
     <main className="">
       <MobileSlide/>
       <ImageSlider />
-      <Links  href="https://wa.link/146h7e" target="_blank" rel="noopener noreferrer" texto="Fale com um representante"/>
+      <Links  href={whats} target="_blank" rel="noopener noreferrer" texto="Fale com um representante"/>
       <Vantagens />
       <CardMuitasVantagens />
-      <Links  href="https://wa.link/146h7e" target="_blank" rel="noopener noreferrer" texto="Fale com um representante"/>
+      <Links  href={whats} target="_blank" rel="noopener noreferrer" texto="Fale com um representante"/>
       <CardVideos/>
       <CardFacilidades />
       <CardServiços />
-      <Links  href="https://wa.link/146h7e" target="_blank" rel="noopener noreferrer" texto="Fale com um representante"/>
+      <Links  href={whats} target="_blank" rel="noopener noreferrer" texto="Fale com um representante"/>
       <CardQuemSomos />
-      <Footer />
     </main>
   );
 }

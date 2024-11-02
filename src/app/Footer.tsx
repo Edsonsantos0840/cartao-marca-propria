@@ -1,7 +1,15 @@
+//Módulo.
 import Link from "next/link";
+//Ícones.
 import { FaWhatsapp } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { TfiEmail } from "react-icons/tfi";
+// Componentes.
+import {
+  whats,
+  email,
+  linkedin,
+} from "./components/arquivos/ArquivoRepresentante";
 
 const Footer: React.FC = () => {
   return (
@@ -15,7 +23,7 @@ const Footer: React.FC = () => {
               Menu do Lojista
             </h6>
             <nav className="flex flex-col space-y-2 relative z-20">
-              <Link href="https://wa.link/146h7e">Seja um credenciado</Link>
+              <Link href={whats}>Seja um credenciado</Link>
               <Link href="https://www.brasilcard.net/bca/lojista/login?f=login_lojista">
                 Login do Lojista
               </Link>
@@ -44,33 +52,21 @@ const Footer: React.FC = () => {
           <div>
             <h6 className="text-lg font-bold uppercase mb-4">Redes Sociais</h6>
             <nav className="flex space-x-4 text-2xl">
-              <div
-                className="p-2 md:p-2 text-7xl rounded-lg shadow-md  hover:scale-125 cursor-pointer ease-in duration-500
-                  text-[var(--base)] bg-[var(--corPrincipalEnd)] hover:text-[var(--corPrincipalEnd)] hover:bg-[var(--opacityAlert)] "
-              >
-                <Link href="https://wa.link/146h7e" target="_blank">
-                  <FaWhatsapp className="hover:text-[var(--corPrincipalEnd)] text-2xl md:text-3xl lg:text-4xl " />
+              <div className="icones ">
+                <Link href={whats} target="_blank">
+                  <FaWhatsapp className="icones " />
                 </Link>
               </div>
 
-              <div
-                className="p-2 md:p-2 text-7xl rounded-lg shadow-md  hover:scale-125 cursor-pointer ease-in duration-500
-                  text-[var(--base)] bg-[var(--corPrincipalEnd)] hover:text-[var(--corPrincipalEnd)] hover:bg-[var(--opacityAlert)] "
-              >
-                <Link
-                  href="https://www.linkedin.com/in/f-eugenio/"
-                  target="_blank"
-                >
-                  <FaLinkedinIn className="hover:text-[var(--corPrincipalEnd)] text-2xl md:text-3xl lg:text-4xl " />
+              <div className="icones ">
+                <Link href={linkedin} target="_blank">
+                  <FaLinkedinIn className="icones " />
                 </Link>
               </div>
 
-              <div
-                className="p-2 md:p-2 text-7xl rounded-lg shadow-md  hover:scale-125 cursor-pointer ease-in duration-500
-                  text-[var(--base)] bg-[var(--corPrincipalEnd)] hover:text-[var(--corPrincipalEnd)] hover:bg-[var(--opacityAlert)] "
-              >
-                <Link href="mailto:f.eugenio63@gmail.com">
-                  <TfiEmail className="hover:text-[var(--corPrincipalEnd)] text-2xl md:text-3xl lg:text-4xl " />
+              <div className="icones ">
+                <Link href={email}>
+                  <TfiEmail className="icones " />
                 </Link>
               </div>
             </nav>

@@ -1,10 +1,13 @@
 'use client';
-
+// Módulos
 import Image from 'next/image';
+// Componentes
 import { images2 } from './arquivos/ArquivoImageSlider';
+//hokks
 import UseSlide from './funções/UseSlide';
 
 const ImageSlider: React.FC = () => {
+  // Hook personalizado com a função carrossel.
   const {currentIndex, handlePrevious, handleNext, setCurrentIndex} = UseSlide()
   return (
     <div className="relative w-full max-w-full mx-auto overflow-hidden hidden lg:block">
@@ -19,13 +22,13 @@ const ImageSlider: React.FC = () => {
       {/* Botões de navegação */}
       <button
         onClick={handlePrevious}
-        className="absolute top-1/2 text-white left-1 transform -translate-y-1/2 bg-[var(--light)] p-2 rounded-full shadow-lg"
+        className="btn4 left-1"
       >
         ◀
       </button>
       <button
         onClick={handleNext}
-        className="absolute top-1/2 right-1 text-white transform -translate-y-1/2 bg-[var(--light)] p-2 rounded-full shadow-lg"
+        className="btn4 right-1"
       >
      ▶
       </button>

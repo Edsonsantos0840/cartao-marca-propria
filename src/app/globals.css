@@ -14,3 +14,31 @@
 :root {
   --blue:#01295f;--indigo:#00233f;--purple:#034d8b;--pink:#e83e8c;--red:#dc3545;--orange:#fd7e14;--yellow:#ffda07;--green:#c3d933;--teal:#20c997;--cyan:#4695bc;--white:#fff;--gray:#6c757d;--gray-dark:#343a40;--primary:#007bff;--secondary:#dbcc35;--success:#4d8b3b;--info:#19a0ee1a;--warning:#ffc107;--danger:#dc3545;--light:#03030385;--dark:#343a40;
 }
+
+@layer components {
+  .btn {
+      @apply 
+         bg-[var(--warning)] hover:bg-[var(--yellow)] w-[98%] md:w-[60%]
+         px-2 py-2 md:px-4 md:py-4  rounded-2xl shadow-md  my-3 md:my-6   
+         font-extrabold text-center text-base md:text-xl text-[var(--blue)] 
+  }
+  .btn2 {
+      @apply hidden md:block px-2 py-1 md:px-4 md:py-2 md:text-base text-xl font-extrabold  rounded-2xl shadow-md  xl:w-[32%]
+  }
+  .btn3 {
+      @apply absolute top-1/2  transform -translate-y-1/2 bg-white p-2 rounded-full shadow
+  }
+  .btn4 {
+      @apply absolute top-1/2 text-white transform -translate-y-1/2 bg-[var(--light)] p-2 rounded-full shadow-lg
+  }
+  .lks {
+    @apply block px-1 py-2 hover:scale-110 hover:bg-slate-100
+  }
+  .icones {
+    @apply p-2 md:p-2 text-7xl rounded-lg shadow-md  hover:scale-125 cursor-pointer ease-in duration-500
+    text-[var(--base)] bg-[var(--corPrincipalEnd)] hover:text-[var(--corPrincipalEnd)] hover:bg-[var(--opacityAlert)]
+  }
+  .icones2 {
+    @apply hover:text-[var(--corPrincipalEnd)] text-2xl md:text-3xl lg:text-4xl
+  }
+}

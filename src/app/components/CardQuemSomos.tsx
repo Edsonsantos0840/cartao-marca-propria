@@ -1,3 +1,4 @@
+//mÓDULOS.
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,30 +12,29 @@ const CardQuemSomos: React.FC = () => {
           {/* Imagens da BrasilCard */}
           <div className="lg:w-1/2 flex flex-col items-center  space-y-6  relative">
             <Image
-              src='/foto-sede.jpg'
+              src="/foto-sede.jpg"
               alt="Foto da sede BrasilCard"
               width={550}
               height={380}
               className="photo-1 shadow-lg rounded-md relative z-10 md:left-8"
             />
             <div className="flex ">
-            <Image
-              src='/2-milhoes-de-clientes.jpg'
-              alt="2 milhões de clientes"
-              width={150}
-              height={90}
-              className="photo-2 shadow-lg rounded-md absolute z-20 left-2 md:left-[10px] lg:left-0 top-[248px] md:top-[330px] lg:top-[320px] lg:w-[280]"
-            />
-            <Image
-              src='/20-anos-de-tradicao-e-credibilidade.png'
-              alt="20 anos de tradição e credibilidade"
-              width={85}
-              height={48}
-              className="photo-3 absolute z-20 top-[290px] md:top-[380px] left-[170px] md:left-[170px] lg:left-[320] lg:top-[410px] lg:w-[150]" 
-            />
-
+              <Image
+                src="/2-milhoes-de-clientes.jpg"
+                alt="2 milhões de clientes"
+                width={150}
+                height={90}
+                className="photo-2 shadow-lg rounded-md absolute z-20 left-2 md:left-[10px] lg:left-0 top-[248px] md:top-[330px] lg:top-[320px] lg:w-[280]"
+              />
+              <Image
+                src="/20-anos-de-tradicao-e-credibilidade.png"
+                alt="20 anos de tradição e credibilidade"
+                width={85}
+                height={48}
+                className="photo-3 absolute z-20 top-[290px] md:top-[380px] left-[170px] md:left-[170px] lg:left-[320] lg:top-[410px] lg:w-[150]"
+              />
             </div>
-     </div>
+          </div>
 
           {/* Texto informativo */}
           <div className="lg:w-1/2 py-8 px-4 lg:pt-4 lg:pl-5">
@@ -49,7 +49,11 @@ const CardQuemSomos: React.FC = () => {
               desde 1999 no mercado e hoje está presente em todo o território
               nacional, realizando parcerias em diversos segmentos comerciais.
             </p>
-            <Link href="/" passHref className="text-[var(--blue)] hover:underline">
+            <Link
+              href="/"
+              passHref
+              className="text-[var(--blue)] hover:underline"
+            >
               Leia mais
             </Link>
 

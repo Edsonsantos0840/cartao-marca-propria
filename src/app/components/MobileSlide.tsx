@@ -1,10 +1,13 @@
 'use client';
-
+// Módulos
 import Image from 'next/image';
+// Componentes
 import { images } from './arquivos/ArquivosSlideMobile';
+//hokks
 import UseSlide from '../components/funções/UseSlide'
 
 const MobileSlide: React.FC = () => {
+  // Hook personalizado com a função carrossel.
     const {currentIndex, handlePrevious, handleNext, setCurrentIndex} = UseSlide()
 
   return (
@@ -29,13 +32,13 @@ const MobileSlide: React.FC = () => {
       {/* Botões de navegação */}
       <button
         onClick={handlePrevious}
-        className="absolute top-1/2 left-[2px] text-white transform -translate-y-1/2 bg-[var(--light)] p-2 rounded-full shadow-lg"
+        className="btn4 left-[2px]"
       >
         ◀
       </button>
       <button
         onClick={handleNext}
-        className="absolute top-1/2  right-[2px] text-white transform -translate-y-1/2 bg-[var(--light)] p-2 rounded-full shadow-lg"
+        className="btn4 right-[2px]"
       >
      ▶
       </button>

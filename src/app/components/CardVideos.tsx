@@ -1,8 +1,11 @@
 "use client";
+//Componentes.
 import { videos } from "./arquivos/ArquivoVideos";
+//Hooks.
 import UseVideoSlide from "./funções/UseVideoSlide";
 
 const CardVideos: React.FC = () => {
+  //Hook personalizado cria efeito de carrossel.
   const { currentIndex, sliderRef, handleNext, handlePrev } = UseVideoSlide();
 
   return (
@@ -29,16 +32,16 @@ const CardVideos: React.FC = () => {
           </div>
         ))}
       </div>
-
+       {/* //Botão de alteração de vídeos. */}
       <button
         onClick={handlePrev}
-        className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow"
+        className="left-2 btn3"
       >
         ◀
       </button>
       <button
         onClick={handleNext}
-        className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow"
+        className="right-2 btn3"
       >
         ▶
       </button>
