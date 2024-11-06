@@ -7,7 +7,7 @@ import img from "./assets/logo.png";
 //Ícone.
 import { FaCaretDown } from "react-icons/fa6";
 //componentes.
-import {whats} from './components/arquivos/ArquivoRepresentante'
+import { whats } from "./components/listas/ListaRepresentante";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,10 +35,12 @@ const Navbar: React.FC = () => {
           >
             <ul className="flex flex-col lg:flex-row lg:ml-auto lg:space-x-6 text-white gap-6">
               <li className="group relative z-20">
-                <Link className="cursor-pointer font-extrabold flex items-center justify-center gap-2 md:gap-4 lg:gap-2 md:text-lg " href={"/"}>
+                <Link
+                  className="cursor-pointer font-extrabold alinha3 gap-2 md:gap-4 lg:gap-2 md:text-lg "
+                  href={"/"}
+                >
                   MENU DO
                   <span className="text-[var(--green)] font-extrabold">
-                    
                     LOJISTA
                   </span>
                   <FaCaretDown />
@@ -65,11 +67,7 @@ const Navbar: React.FC = () => {
                   >
                     Onde comprar
                   </Link>
-                  <Link
-                    href={whats}
-                    target="_blank"
-                    className="lks"
-                  >
+                  <Link href={whats} target="_blank" className="lks">
                     Indique um lojista
                   </Link>
                 </div>

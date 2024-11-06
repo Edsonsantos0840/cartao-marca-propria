@@ -8,7 +8,7 @@ const CardQuemSomos: React.FC = () => {
       <div className="container mx-auto md:px-4">
         <hr className="block lg:hidden md:mb-6" />
 
-        <div className="flex flex-col lg:flex-row items-center space-y-8 lg:space-y-0 lg:space-x-10 ">
+        <div className="flex flex-col items-center lg:flex-row  space-y-8 lg:space-y-0 lg:space-x-10 ">
           {/* Imagens da BrasilCard */}
           <div className="lg:w-1/2 flex flex-col items-center  space-y-6  relative">
             <Image
@@ -24,14 +24,18 @@ const CardQuemSomos: React.FC = () => {
                 alt="2 milhões de clientes"
                 width={150}
                 height={90}
-                className="photo-2 shadow-lg rounded-md absolute z-20 left-2 md:left-[10px] lg:left-0 top-[248px] md:top-[330px] lg:top-[320px] lg:w-[280]"
+                className="
+                  photo-2 shadow-lg rounded-md absolute z-20 
+                  left-2 md:left-[10px] lg:left-0 top-[248px] md:top-[330px] lg:top-[320px] lg:w-[280]"
               />
               <Image
                 src="/20-anos-de-tradicao-e-credibilidade.png"
                 alt="20 anos de tradição e credibilidade"
                 width={85}
                 height={48}
-                className="photo-3 absolute z-20 top-[290px] md:top-[380px] left-[170px] md:left-[170px] lg:left-[320] lg:top-[410px] lg:w-[150]"
+                className="
+                  photo-3 absolute z-20 
+                  top-[290px] md:top-[380px] left-[170px] md:left-[170px] lg:left-[320] lg:top-[410px] lg:w-[150]"
               />
             </div>
           </div>

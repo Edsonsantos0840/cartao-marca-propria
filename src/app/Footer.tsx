@@ -5,11 +5,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { TfiEmail } from "react-icons/tfi";
 // Componentes.
-import {
-  whats,
-  email,
-  linkedin,
-} from "./components/arquivos/ArquivoRepresentante";
+import { whats, email, linkedin } from "./components/listas/ListaRepresentante";
 
 const Footer: React.FC = () => {
   return (
@@ -77,7 +73,7 @@ const Footer: React.FC = () => {
 
       {/* Informações de Contato e Direitos Reservados */}
       <div className="bg-[var(--blue)] py-4 mt-6">
-        <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center px-4">
+        <div className="container mx-auto alinha lg:flex-row px-4">
           <div>
             <p>© BrasilCard 2024</p>
             <p>Avenida Jorge Vieira, 257 - Centro, Monte Belo/MG</p>

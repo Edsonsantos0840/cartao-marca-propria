@@ -1,11 +1,11 @@
 //Módulos
 import Image from "next/image";
 //Componentes
-import { BenefitsCard } from "./arquivos/ArquivoVantagens";
+import { BenefitsCard } from "./listas/ListaVantagens";
 
 const CardFacilidades: React.FC = () => {
   return (
-    <div className="benefits pt-10 bg-[#0099ff1c]  " >
+    <div className="benefits pt-10 bg-[#0099ff1c]  ">
       <div className="container px-0 md:px-4">
         <h3 className="text-center text-2xl md:text-4xl font-extralight text-blue-900 lg:mb-2">
           Veja como é fácil fazer o seu BrasilCard e confira as vantagens:
@@ -18,7 +18,7 @@ const CardFacilidades: React.FC = () => {
               className="benefit relative  lg:p-6  flex flex-col items-start"
             >
               <Image
-                src='/circle-yellow.png'
+                src="/circle-yellow.png"
                 alt="Ícone círculo amarelo"
                 width={207}
                 height={207}
@@ -31,7 +31,11 @@ const CardFacilidades: React.FC = () => {
                 height={150}
                 className="lg:mb-4 absolute md:w-[180px] left-[0px] "
               />
-              <h2 className="text-2xl md:text-4xl lg:text-4xl font-extrabold absolute text-start w-[60%] text-[var(--blue)] left-[120px] top-[90px] md:left-[140px] md:top-[100px] lg:top-[140px]">
+              <h2 className="
+                w-[60%] text-2xl md:text-4xl lg:text-4xl 
+                font-extrabold absolute text-start text-[var(--blue)] 
+                left-[120px] top-[90px] md:left-[140px] md:top-[100px] lg:top-[140px]"
+              >
                 {benefit.title}
               </h2>
             </div>

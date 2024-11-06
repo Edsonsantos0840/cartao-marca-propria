@@ -1,36 +1,40 @@
-'use client';
+"use client";
 // Módulos
-import Image from 'next/image';
+import Image from "next/image";
 // Componentes
-import { images2 } from './arquivos/ArquivoImageSlider';
+import { images2 } from "./listas/ListaImageSlider";
 //hokks
-import UseSlide from './funções/UseSlide';
+import UseSlide from "./funções/UseSlide";
 
 const ImageSlider: React.FC = () => {
   // Hook personalizado com a função carrossel.
-  const {currentIndex, handlePrevious, handleNext, setCurrentIndex} = UseSlide()
+  const { currentIndex, handlePrevious, handleNext, setCurrentIndex } =
+    UseSlide();
   return (
     <div className="relative w-full max-w-full mx-auto overflow-hidden hidden lg:block">
-      <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-        {images2.map((image , index) => (
+      <div
+        className="flex transition-transform duration-500"
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+      >
+        {images2.map((image, index) => (
           <div key={index} className="min-w-full w-full ">
-            <Image src={image.src} alt='Banner Carrocel' width={1500} height={450} className="w-full h-auto" />
+            <Image
+              src={image.src}
+              alt="Banner Carrocel"
+              width={1500}
+              height={450}
+              className="w-full h-auto"
+            />
           </div>
         ))}
       </div>
 
       {/* Botões de navegação */}
-      <button
-        onClick={handlePrevious}
-        className="btn4 left-1"
-      >
+      <button onClick={handlePrevious} className="btn4 left-1">
         ◀
       </button>
-      <button
-        onClick={handleNext}
-        className="btn4 right-1"
-      >
-     ▶
+      <button onClick={handleNext} className="btn4 right-1">
+        ▶
       </button>
 
       {/* Indicadores */}
@@ -39,7 +43,9 @@ const ImageSlider: React.FC = () => {
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-2 h-2 rounded-full ${currentIndex === index ? 'bg-white' : 'bg-[#fcfcfc42]'}`}
+            className={`w-2 h-2 rounded-full ${
+              currentIndex === index ? "bg-white" : "bg-[#fcfcfc42]"
+            }`}
           />
         ))}
       </div>

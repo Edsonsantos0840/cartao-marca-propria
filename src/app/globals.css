@@ -16,6 +16,24 @@
 }
 
 @layer components {
+  .alinha {
+    @apply flex flex-col justify-between items-center
+  }
+  .alinha2 {
+    @apply flex justify-between items-center
+  }
+  .alinha3 {
+    @apply flex items-center justify-center
+  }
+  .alinha4 {
+    @apply flex flex-col justify-around items-center text-center
+  }
+  .alinha5 {
+    @apply flex justify-around items-center 
+  }
+  .alinha6 {
+    @apply flex flex-col justify-center items-center
+  }
   .btn {
       @apply 
          bg-[var(--warning)] hover:bg-[var(--yellow)] w-[98%] md:w-[60%]

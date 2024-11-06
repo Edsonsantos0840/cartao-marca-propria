@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 //Componentes.
-import { servicesData } from "./arquivos/ArquivoVantagens";
+import { servicesData } from "./listas/ListaVantagens";
 
 const CardServiços: React.FC = () => {
   return (
