@@ -1,6 +1,5 @@
 "use client";
 //Módulos.
-import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 //Ícone.
@@ -10,7 +9,6 @@ import { whats } from "../fields/ListaRepresentante";
 import { NaveFields } from "../fields/NaveFields";
 
 export default function Navbar() {
-  // const [isOpen, setIsOpen] = useState(false);
 
   return (
     <aside className="bg-indigo shadow-xl py-2 ">
