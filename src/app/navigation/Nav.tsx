@@ -10,7 +10,7 @@ import { whats } from "../fields/ListaRepresentante";
 import { NaveFields } from "../fields/NaveFields";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
   return (
     <aside className="bg-indigo shadow-xl py-2 ">
@@ -32,9 +32,7 @@ export default function Navbar() {
           {/*------------------------- Controle para telas grandes.  ------------------------ */}
 
           <div
-            className={`${
-              isOpen ? "hidden" : "block"
-            } md:w-full flex items-center w-auto md:gap-12 lg:gap-9`}
+            className={` md:w-full flex items-center w-auto md:gap-12 lg:gap-9`}
           >
             <section className="flex flex-col lg:flex-row lg:ml-auto lg:space-x-6 text-white gap-6">
               <div className="group relative z-20">
