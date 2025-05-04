@@ -1,74 +1,81 @@
-//Módulos.
+// Módulos
 import Image from "next/image";
 import Link from "next/link";
-//Componentes.
-import { servicesData } from "./listas/ListaVantagens";
+// Componentes
+import { servicesData } from "../fields/ListaVantagens";
 
-const CardServiços: React.FC = () => {
+export default function CardServiços() {
   return (
-    <div className="services py-5 md:py-10 bg-gray-50 ">
-      <div className="container mx-auto ">
-        <h3 className="text-center text-xl md:text-3xl font-black text-[var(--blue)] mb-5 md:mb-8">
+    <section className="py-10 bg-gray-50" aria-label="Serviços da BrasilCard">
+      <div className="container max-w-[1280px] mx-auto px-4">
+        <h3 className="text-center text-2xl md:text-3xl font-black text-blue mb-8">
           Serviços que vão facilitar sua vida!
         </h3>
-        {/* //Cards Serviços. */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-center ">
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {servicesData.map((service, index) => (
-            <div
+            <article
               key={index}
-              className="bg-[var(--info)] px-3 md:pl-8 py-2 rounded-lg shadow-lg flex justify-between"
+              className="bg-info rounded-lg shadow-lg flex flex-col md:flex-row justify-between p-4 md:p-6"
             >
-              <div className="w-[55%] md:w-[50%] text-start">
-                <h2 className=" text-2xl md:text-4xl font-black text-[var(--orange)] mb-2">
+              <div className="md:w-1/2">
+                <h2 className="text-2xl md:text-4xl font-black text-orange mb-2">
                   {service.title}
                 </h2>
-                <h4 className="text-blue-900 text-lg md:text-2xl font-extrabold">
+                <p className="text-blue-900 text-lg md:text-2xl font-extrabold text-blue">
                   {service.description}
-                </h4>
+                </p>
 
                 {service.subtitle && (
-                  <h5 className="text-blue-500 mt-3 mb-2 text-xl md:text-2xl">
+                  <p className="text-blue-500 mt-3 text-xl md:text-2xl text-blue">
                     {service.subtitle}
-                  </h5>
+                  </p>
                 )}
-                <h3 className="text-red-900 mt-3 mb-2 text-2xl md:text-3xl font-black">
-                  {service.ajuste}
-                </h3>
+
+                {service.ajuste && (
+                  <p className="text-red-900 mt-3 text-2xl md:text-3xl font-black text-[#8f1c1c]">
+                    {service.ajuste}
+                  </p>
+                )}
 
                 {service.link && (
-                  <div className="flex mt-1 ">
+                  <figure className="flex flex-wrap gap-2 mt-4">
                     {service.link.map((linkItem, idx) => (
                       <Link
                         key={idx}
                         href={linkItem.href}
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label={linkItem.alt}
                       >
                         <Image
                           src={linkItem.src}
                           alt={linkItem.alt}
                           width={100}
                           height={40}
-                          className="rounded left-2 "
+                          quality={100}
+                          className="rounded"
                         />
                       </Link>
                     ))}
-                  </div>
+                  </figure>
                 )}
               </div>
-              <Image
-                src={service.image}
-                alt={service.title}
-                width={service.largura}
-                height={service.altura}
-                className={`md:mb-4 m-0 md:w-[32%] lg:w-[50%] xl:w-[35%] `}
-              />
-            </div>
+
+              <figure className="mt-4 md:mt-0 md:w-[45%] flex justify-center items-center">
+                <Image
+                  src={service.image}
+                  alt={`Imagem do serviço: ${service.title}`}
+                  width={service.largura}
+                  height={service.altura}
+                  quality={100}
+                  className="w-full h-auto object-contain"
+                />
+              </figure>
+            </article>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
-};
-
-export default CardServiços;
+}

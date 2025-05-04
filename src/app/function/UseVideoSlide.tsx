@@ -1,5 +1,5 @@
 "use client";
-import { videos } from "../listas/ListaVideos";
+import { videos } from "../fields/ListaVideos";
 import { Dispatch, RefObject, SetStateAction, useRef, useState } from "react";
 
 export default function UseVideoSlide(): {

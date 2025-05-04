@@ -1,75 +1,56 @@
-//Módulos
+// Módulos
 import Image from "next/image";
 import Link from "next/link";
+import { VantagensFields } from "../fields/MuitasVantagensField";
 
-const CardMuitasVantagens: React.FC = () => {
+export default function CardMuitasVantagens() {
   return (
-    <div className="banners bg-gray-100 py-4 md:py-8">
-      <div className="container px-1 md:px-4 pb-5">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          {/* Banner Cliente */}
-          <div className="custom banner-cliente  md:p-6  ">
-            <div className="inner flex bg-[var(--blue)] pt-4 px-4 rounded-lg text-white shadow-lg">
-              <div>
-                <h4 className="text-xl md:text-2xl font-bold mb-4">
-                  MUITAS VANTAGENS
-                  <br />
-                  PARA O CLIENTE
-                </h4>
-                <p className="mb-4">
-                  <Link href="/" className=" hover:underline" passHref>
+    <section className="bg-gray-100 py-6 md:py-12">
+      <div className="max-w-[1280px] mx-auto space-y-10 px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          {VantagensFields.map((item, index) => (
+            <article key={`${index}-${item.text2}`} className="space-y-4">
+              <div
+                className={`flex flex-col md:flex-row items-center gap-6 p-6 rounded-lg shadow-lg ${item.colorDiv}`}
+              >
+                <header className="flex-1">
+                  <h2 className="text-2xl md:text-3xl font-bold leading-tight mb-2">
+                    {item.text1}
+                    <br />
+                    {item.text2}
+                  </h2>
+                  <Link
+                    href="https://wa.link/146h7e"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-blue-100"
+                    aria-label={`Saiba mais sobre: ${item.text1} ${item.text2}`}
+                  >
                     Saiba mais
                   </Link>
-                </p>
-              </div>
-              <div className="flex justify-center">
-                <Image
-                  src="/mulher.png"
-                  alt="Vantagens para cliente"
-                  width={627}
-                  height={408}
-                />
-              </div>
-            </div>
-            <h5 className="mt-4 text-xl md:text-3xl text-[var(--blue)] text-start md:text-center">
-              Quem tem Cartão BrasilCard tem crédito fácil para poder comprar
-              com facilidade e muita tranquilidade para pagar.
-            </h5>
-          </div>
+                </header>
 
-          {/* Banner Lojista */}
-          <div className="custom banner-lojista px-1  md:p-6 ">
-            <div className="inner flex bg-[var(--green)] md:pt-4 px-4 rounded-lg text-white shadow-lg">
-              <div>
-                <h4 className="text-xl md:text-2xl font-bold mb-4">
-                  MUITAS FACILIDADES
-                  <br />
-                  PARA O LOJISTA
-                </h4>
-                <p className="mb-4">
-                  <Link href="/" className=" hover:underline" passHref>
-                    Saiba mais
-                  </Link>
-                </p>
+                <figure className="w-full md:w-auto flex justify-center">
+                  <Image
+                    src={item.src}
+                    alt={`Ilustração: ${item.text2}`}
+                    width={400}
+                    height={300}
+                    quality={100}
+                    className="w-full max-w-xs md:max-w-sm h-auto"
+                  />
+                </figure>
               </div>
-              <div className="flex justify-center">
-                <Image
-                  src="/homem.png"
-                  alt="Facilidades para lojista"
-                  width={627}
-                  height={408}
-                />
-              </div>
-            </div>
-            <h5 className="mt-4 text-xl md:text-3xl text-[var(--success)] lg:text-[var(--green)] md:text-center text-start">
-              Quem oferece o cartão marca própria BrasilCard a seus clientes
-              aumenta a fidelização, o ticket médio e garante o recebimento.
-            </h5>
-          </div>
+
+              <p
+                className={`text-xl md:text-2xl font-medium text-start md:text-center ${item.colorP}`}
+              >
+                {item.textInfo}
+              </p>
+            </article>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
-};
-
-export default CardMuitasVantagens;
+}

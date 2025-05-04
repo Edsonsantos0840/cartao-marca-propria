@@ -1,46 +1,61 @@
 "use client";
-//Componentes.
-import { videos } from "./listas/ListaVideos";
-//Hooks.
-import UseVideoSlide from "./funções/UseVideoSlide";
 
-const CardVideos: React.FC = () => {
-  //Hook personalizado cria efeito de carrossel.
+// Componentes e hooks
+import { videos } from "../fields/ListaVideos";
+import UseVideoSlide from "../function/UseVideoSlide";
+
+export default function CardVideos() {
   const { currentIndex, sliderRef, handleNext, handlePrev } = UseVideoSlide();
 
   return (
-    <div className="relative overflow-hidden w-full bg-[var(--indigo)]  mx-auto">
+    <section
+      className="relative overflow-hidden w-full bg-indigo px-4 py-8"
+      aria-label="Carrossel de vídeos BrasilCard"
+    >
       <div
         ref={sliderRef}
-        className="flex transition-transform duration-500"
+        className="flex transition-transform duration-500 ease-in-out"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {videos.map((video) => (
-          <div key={video.id} className="w-full flex-shrink-0">
-            <video
-              className="w-full h-auto max-w-[58rem] m-auto mt-5 mb-0"
-              controls
-              poster={`/${video.id}.png`}
-              preload="metadata"
-            >
-              <source src={video.src} type="video/mp4" />
-              Seu navegador não suporta vídeos HTML5.
-            </video>
-            <h3 className="text-center text-2xl text-white mt-2">
-              {video.title}
-            </h3>
-          </div>
+          <article key={video.id} className="w-full flex-shrink-0">
+            <div className="max-w-5xl mx-auto">
+              <video
+                className="w-full h-auto rounded-md shadow-md"
+                controls
+                preload="metadata"
+                poster={`/${video.id}.png`}
+                aria-label={`Vídeo: ${video.title}`}
+              >
+                <source src={video.src} type="video/mp4" />
+                <track kind="captions" />
+                Seu navegador não suporta a reprodução de vídeos.
+              </video>
+              <h3 className="text-center text-white text-xl md:text-2xl mt-4">
+                {video.title}
+              </h3>
+            </div>
+          </article>
         ))}
       </div>
-      {/* //Botão de alteração de vídeos. */}
-      <button onClick={handlePrev} className="left-2 btn3">
+
+      {/* Botões de navegação */}
+      <button
+        type="button"
+        onClick={handlePrev}
+        className="btn3 absolute top-1/2 left-2 -translate-y-1/2 z-10"
+        aria-label="Vídeo anterior"
+      >
         ◀
       </button>
-      <button onClick={handleNext} className="right-2 btn3">
+      <button
+        type="button"
+        onClick={handleNext}
+        className="btn3 absolute top-1/2 right-2 -translate-y-1/2 z-10"
+        aria-label="Próximo vídeo"
+      >
         ▶
       </button>
-    </div>
+    </section>
   );
-};
-
-export default CardVideos;
+}

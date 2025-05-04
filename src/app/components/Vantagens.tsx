@@ -2,35 +2,43 @@
 import Link from "next/link";
 import Image from "next/image";
 // Componentes
-import { vantagens } from "./listas/ListaVantagens";
+import { vantagens } from "../fields/ListaVantagens";
 
-const CardGrid: React.FC = () => (
-  <div className="container mx-auto px-1 md:px-4 md:py-6  ">
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-6">
-      {vantagens.map((card, index) => (
-        <Link
-          key={index}
-          href={card.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="
-           flex  items-center bg-slate-100 hover:bg-slate-200 
-           hover:scale-105 rounded-lg shadow-lg gap-2 
-           transition delay-150 duration-300 ease-in-out"
-        >
-          <div className="bg-slate-200 rounded-tl-md p-6 h-[100%] ">
-            <Image
-              src={card.imageSrc}
-              alt={card.title}
-              width={50}
-              height={50}
-            />
-          </div>
-          <h2 className="mt-4 text-center font-semibold  ">{card.title}</h2>
-        </Link>
-      ))}
-    </div>
-  </div>
-);
-
-export default CardGrid;
+export default function Vantagens() {
+  return (
+    <section
+      className="max-w-[1280px] mx-auto  py-8"
+      aria-label="Lista de vantagens oferecidas"
+    >
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {vantagens.map((card, index) => (
+          <article
+            key={`vantagem-${index}-${card.title}`}
+            className="flex items-center bg-slate-100 hover:bg-slate-200 hover:scale-105 rounded-lg shadow-md gap-4 p-4 transition duration-300 ease-in-out"
+          >
+            <figure className="flex-shrink-0 bg-slate-200 p-4 rounded-md">
+              <Image
+                src={card.imageSrc}
+                alt={`Ícone representando: ${card.title}`}
+                width={50}
+                height={50}
+                quality={100}
+              />
+            </figure>
+            <div className="flex-1">
+              <Link
+                href={card.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Mais informações sobre ${card.title}`}
+                className="text-lg font-semibold text-slate-900 hover:underline block"
+              >
+                {card.title}
+              </Link>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
