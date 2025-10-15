@@ -17,7 +17,10 @@ export default function MobileSlide(){
     >
       <div
         className="flex transition-transform duration-700"
-        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        style={{ 
+          transform: `translateX(-${currentIndex * 100}%)`,
+           transition: "transform 3s ease-in-out", 
+        }}
         role="region"
         aria-live="polite"
       >

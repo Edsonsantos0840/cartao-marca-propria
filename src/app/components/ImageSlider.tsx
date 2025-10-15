@@ -20,6 +20,7 @@ export default function ImageSlider(){
     style={{
       width: `${images2.length * 100}%`,
       transform: `translateX(-${currentIndex * (100 / images2.length)}%)`,
+       transition: "transform 3s ease-in-out",
     }}
     role="region"
     aria-live="polite"
