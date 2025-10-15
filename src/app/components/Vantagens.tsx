@@ -7,7 +7,7 @@ import { vantagens } from "../fields/ListaVantagens";
 export default function Vantagens() {
   return (
     <section
-      className="max-w-[1280px] mx-auto  py-8"
+      className="max-w-[1200px] mx-auto  py-8"
       aria-label="Lista de vantagens oferecidas"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

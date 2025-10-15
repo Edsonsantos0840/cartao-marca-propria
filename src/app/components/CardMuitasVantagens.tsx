@@ -6,7 +6,7 @@ import { VantagensFields } from "../fields/MuitasVantagensField";
 export default function CardMuitasVantagens() {
   return (
     <section className="bg-gray-100 py-6 md:py-12">
-      <div className="max-w-[1280px] mx-auto space-y-10 px-4">
+      <div className="max-w-[1200px] mx-auto space-y-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           {VantagensFields.map((item, index) => (
             <article key={`${index}-${item.text2}`} className="space-y-4">

@@ -7,7 +7,7 @@ import { servicesData } from "../fields/ListaVantagens";
 export default function CardServiços() {
   return (
     <section className="py-10 bg-gray-50" aria-label="Serviços da BrasilCard">
-      <div className="container max-w-[1280px] mx-auto px-4">
+      <div className="container max-w-[1200px] mx-auto px-4">
         <h3 className="text-center text-2xl md:text-3xl font-black text-blue mb-8">
           Serviços que vão facilitar sua vida!
         </h3>

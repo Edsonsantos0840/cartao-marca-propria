@@ -12,7 +12,7 @@ export default function Navbar() {
 
   return (
     <aside className="bg-indigo shadow-xl py-2 ">
-        <nav className="flex items-center justify-between m-auto  max-w-[1280px]">
+        <nav className="flex items-center justify-between m-auto  max-w-[1200px]">
           {/* Logo da Brasilcard */}
           <figure className="relative w-[150px] h-[50px] md:w-[250px] xl:w-[300px]">
             <Image

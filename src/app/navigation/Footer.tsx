@@ -9,10 +9,10 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-blue text-white text-sm">
+    <footer className="bg-blue text-white text-sm ">
       {/* Navegação Principal */}
-      <div className="container mx-auto px-4 pt-10 pb-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className=" max-w-[1200px] mx-auto px-4 pt-10 pb-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Menu do Lojista */}
 
           <aside>
@@ -37,7 +37,7 @@ export default function Footer() {
           </aside>
 
           {/* Menu Institucional */}
-          <aside>
+          <aside className=" mx-auto">
             <h6 className="text-lg font-bold uppercase mb-4">
               Menu Institucional
             </h6>
@@ -59,7 +59,7 @@ export default function Footer() {
           </aside>
 
           {/* Redes Sociais */}
-          <aside>
+          <aside className="mx-auto">
             <h6 className="text-lg font-bold uppercase mb-4">Redes Sociais</h6>
             <nav
               className="flex items-center space-x-5 text-2xl"
@@ -83,15 +83,16 @@ export default function Footer() {
       <hr className="border-white/20 mx-4" />
 
       {/* Rodapé Informativo */}
-      <address className="bg-blue py-6">
-        <div className="container mx-auto px-4 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 text-xs">
+      <address className="bg-blue py-6 max-w-[1200px] mx-auto">
+        <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 justify-between items-start lg:items-center gap-6 text-xs">
           <div className="space-y-1">
             <p>© BrasilCard {new Date().getFullYear()}</p>
             <p>Avenida Jorge Vieira, 257 - Centro, Monte Belo/MG</p>
             <p>Rua Paracatu, 1201 - Santo Agostinho, Belo Horizonte/MG</p>
             <p>Rua Conselheiro Saraiva, 207 - Santana, São Paulo/SP</p>
           </div>
-          <div>
+          <div></div>
+          <div className="mx-auto">
             <p className="hover:text-yellow-300 hover:scale-125 transition">
               Desenvolvido por:{" "}
               <Link

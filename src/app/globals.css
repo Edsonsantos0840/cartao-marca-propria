@@ -11,6 +11,8 @@
   margin: auto;
 }
 
+
+
 @layer components {
   .alinha {
     @apply flex flex-col justify-between items-center;

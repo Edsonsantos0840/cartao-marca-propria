@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function CardQuemSomos(){
   return (
     <section className="brasilcard md:py-10 bg-white md:mb-24">
-      <div className="max-w-[1280px] mx-auto ">
+      <div className="max-w-[1200px] mx-auto ">
         <hr className="block lg:hidden md:mb-6" />
 
         <div className="flex flex-col items-center lg:flex-row  space-y-8 lg:space-y-0 lg:space-x-10 ">
@@ -17,7 +17,7 @@ export default function CardQuemSomos(){
               width={550}
               height={380}
               quality={100}
-              className="photo-1 shadow-lg rounded-md relative z-10 md:left-8"
+              className="photo-1 shadow-2xl rounded-md relative z-10 md:left-4"
             />
             <figure className="flex ">
               <Image
@@ -27,8 +27,8 @@ export default function CardQuemSomos(){
                 height={90}
                 quality={100}
                 className="
-                  photo-2 shadow-lg rounded-md absolute z-20 
-                  left-2 md:left-[10px] lg:left-0 top-[248px] md:top-[330px] lg:top-[320px] lg:w-[280]"
+                  photo-2 shadow-2xl rounded-md absolute z-20 
+                  left-2 md:left-[10px] lg:left-3 top-[248px] md:top-[330px] lg:top-[340px] lg:w-[280]"
               />
               <Image
                 src="/20-anos-de-tradicao-e-credibilidade.png"
