@@ -16,7 +16,9 @@ interface Benefit {
 interface Service {
   image: string | StaticImageData;
   title: string;
+  title2?: string;
   description: string;
+  description2?: string;
   subtitle?: string;
   ajuste?: string;
   largura?: number;
@@ -99,8 +101,10 @@ const BenefitsCard: Benefit[] = [
 const servicesData: Service[] = [
   {
     image: '/assets/celular-1.png',
-    title: "Aplicativo Brasilcard",
-    description: "Informações online na palma da mão.",
+    title: "Aplicativo ",
+    title2: "Brasilcard",
+    description: "Informações online ",
+    description2: "na palma da mão.",
     subtitle: "Baixe gratuitamente nas plataformas",
     largura: 130 ,
     altura: 245,
@@ -119,16 +123,20 @@ const servicesData: Service[] = [
   },
   {
     image: '/assets/saque-na-hora.png',
-    title: "Precisou de dinheiro?",
-    description: "Com o Saque na Hora você pode retirar até 40%",
+    title: "Precisou ",
+    title2: " de dinheiro?",
+    description: "Com o Saque na Hora ",
+    description2: "você pode retirar até 40%",
     ajuste: " do seu limite",
     largura: 209,
     altura: 268,
   },
   {
     image: '/assets/aprovacao-instantanea(1).png',
-    title: "Aprovação Instantânea ",
-    description: "O cartão é aprovado em apenas ",
+    title: "Aprovação ",
+    title2: "Instantânea ",
+    description: "O cartão é  ",
+    description2: "aprovado em apenas ",
     ajuste: "00:01 segundo.",
     largura: 190,
     altura: 110,
@@ -136,8 +144,11 @@ const servicesData: Service[] = [
   {
     image: '/assets/celular-2.png',
     title: "Recarga para celular",
+    title2: "para celular",
     description:
-      "Basta enviar um SMS GRATUITO com a palavra BCARGA para o",
+      "Basta enviar um SMS GRATUITO ",
+      description2:
+      " com a palavra BCARGA para o",
       ajuste: " número 28595",
       largura: 180 ,
     altura: 239,

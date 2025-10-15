@@ -6,34 +6,40 @@ import { servicesData } from "../fields/ListaVantagens";
 
 export default function CardServiços() {
   return (
-    <section className="py-10 bg-gray-50" aria-label="Serviços da BrasilCard">
+    <section className="py-8 bg-gray-50" aria-label="Serviços da BrasilCard">
       <div className="container max-w-[1200px] mx-auto px-4">
-        <h3 className="text-center text-2xl md:text-3xl font-black text-blue mb-8">
+        <h3 className="text-center text-[1.6rem] md:text-3xl font-black text-blue mb-4">
           Serviços que vão facilitar sua vida!
         </h3>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-6">
           {servicesData.map((service, index) => (
             <article
               key={index}
-              className="bg-info rounded-lg shadow-lg flex flex-col md:flex-row justify-between p-4 md:p-6"
+              className="bg-info rounded-lg shadow-md flex flex-col md:flex-row justify-between p-8 md:p-6"
             >
               <div className="md:w-1/2">
-                <h2 className="text-2xl md:text-4xl font-black text-orange mb-2">
+                <h2 className="text-4xl md:text-4xl text-[#34b2d8] ">
                   {service.title}
                 </h2>
-                <p className="text-blue-900 text-lg md:text-2xl font-extrabold text-blue">
+                <h2 className="text-4xl md:text-4xl text-blue font-black mb-1">
+                  {service.title2}
+                </h2>
+                <p className="text-blue-900 text-xl md:text-2xl font-extrabold text-blue">
                   {service.description}
+                </p>
+                <p className="text-blue-900 text-xl md:text-2xl font-extrabold text-blue">
+                  {service.description2}
                 </p>
 
                 {service.subtitle && (
-                  <p className="text-blue-500 mt-3 text-xl md:text-2xl text-blue">
+                  <p className="text-blue-500 mt-3 text-base md:text-2xl text-orange">
                     {service.subtitle}
                   </p>
                 )}
 
                 {service.ajuste && (
-                  <p className="text-red-900 mt-3 text-2xl md:text-3xl font-black text-[#8f1c1c]">
+                  <p className="text-red-900 mt-3 text-2xl md:text-3xl font-black text-red">
                     {service.ajuste}
                   </p>
                 )}
@@ -51,10 +57,10 @@ export default function CardServiços() {
                         <Image
                           src={linkItem.src}
                           alt={linkItem.alt}
-                          width={100}
+                          width={120}
                           height={40}
                           quality={100}
-                          className="rounded"
+                          className="rounded "
                         />
                       </Link>
                     ))}
@@ -62,7 +68,7 @@ export default function CardServiços() {
                 )}
               </div>
 
-              <figure className="mt-4 md:mt-0 md:w-[45%] flex justify-center items-center">
+              <figure className="mt-4 md:mt-0 md:w-[45%] hidden md:flex justify-center items-center ">
                 <Image
                   src={service.image}
                   alt={`Imagem do serviço: ${service.title}`}

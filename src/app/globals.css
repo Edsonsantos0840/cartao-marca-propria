@@ -10,7 +10,9 @@
   max-width: 800px;
   margin: auto;
 }
-
+.text-shadow-lg {
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4);
+  }
 
 
 @layer components {
@@ -56,4 +58,5 @@
   .icones2 {
     @apply hover:text-[var(--corPrincipalEnd)] text-2xl md:text-3xl lg:text-4xl;
   }
+  
 }
