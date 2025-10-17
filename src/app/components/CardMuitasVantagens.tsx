@@ -5,16 +5,16 @@ import { VantagensFields } from "../fields/MuitasVantagensField";
 
 export default function CardMuitasVantagens() {
   return (
-    <section className="bg-gray-100 py-2 md:py-12">
-      <div className="max-w-[1200px] mx-auto space-y-10">
+    <section className=" py-2 md:py-12 mx-6 lg:mx-0" aria-label="Vantagens">
+      <div className="max-w-[1100px] mx-auto space-y-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           {VantagensFields.map((item, index) => (
-            <article key={`${index}-${item.text2}`} className="space-y-4 px-4">
+            <article key={`${index}-${item.text2}`} className="space-y-4 ">
               <div
-                className={`flex flex-row items-center lg:gap-6 px-4 rounded-lg shadow-lg ${item.colorDiv}`}
+                className={`flex flex-row items-center px-4 rounded-lg shadow-lg ${item.colorDiv}`}
               >
                 <header className="flex-1">
-                  <h2 className="text-xl md:text-3xl font-black leading-tight mb-2">
+                  <h2 className="text-xl md:text-[1.7rem] lg:text-2xl font-black leading-tight mb-2">
                     {item.text1}
                     <br />
                     {item.text2}
@@ -30,7 +30,7 @@ export default function CardMuitasVantagens() {
                   </Link>
                 </header>
 
-                <figure className="w-[200px] md:w-auto flex justify-center">
+                <figure className="w-[200px] md:w-[300px] lg:w-[230px] flex justify-center">
                   <Image
                     src={item.src}
                     alt={`Ilustração: ${item.text2}`}
@@ -43,7 +43,7 @@ export default function CardMuitasVantagens() {
               </div>
 
               <p
-                className={`text-base md:text-2xl md:font-medium px-2  text-center ${item.colorP}`}
+                className={`text-base md:text-[1.2rem] px-2  text-center ${item.colorP}`}
               >
                 {item.textInfo}
               </p>

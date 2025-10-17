@@ -9,7 +9,7 @@ export default function CardVideos() {
 
   return (
     <section
-      className="relative overflow-hidden w-full bg-indigo px-4 py-8"
+      className="relative overflow-hidden w-full bg-blue "
       aria-label="Carrossel de vídeos BrasilCard"
     >
       <div
@@ -31,9 +31,6 @@ export default function CardVideos() {
                 <track kind="captions" />
                 Seu navegador não suporta a reprodução de vídeos.
               </video>
-              <h3 className="text-center text-white text-xl md:text-2xl mt-4">
-                {video.title}
-              </h3>
             </div>
           </article>
         ))}

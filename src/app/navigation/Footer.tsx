@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer className="bg-blue text-white text-sm ">
       {/* Navegação Principal */}
-      <div className=" max-w-[1200px] mx-auto px-4 pt-10 pb-6">
+      <div className=" max-w-[1100px] mx-auto px-4 pt-10 pb-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Menu do Lojista */}
 
@@ -37,7 +37,7 @@ export default function Footer() {
           </aside>
 
           {/* Menu Institucional */}
-          <aside className=" mx-auto">
+          <aside className=" lg:mx-auto">
             <h6 className="text-lg font-bold uppercase mb-4">
               Menu Institucional
             </h6>
@@ -59,7 +59,7 @@ export default function Footer() {
           </aside>
 
           {/* Redes Sociais */}
-          <aside className="mx-auto">
+          <aside className="lg:mx-auto">
             <h6 className="text-lg font-bold uppercase mb-4">Redes Sociais</h6>
             <nav
               className="flex items-center space-x-5 text-2xl"
@@ -83,7 +83,7 @@ export default function Footer() {
       <hr className="border-white/20 mx-4" />
 
       {/* Rodapé Informativo */}
-      <address className="bg-blue py-6 max-w-[1200px] mx-auto">
+      <address className="bg-blue py-6 max-w-[1100px] mx-auto">
         <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 justify-between items-start lg:items-center gap-6 text-xs">
           <div className="space-y-1">
             <p>© BrasilCard {new Date().getFullYear()}</p>
@@ -92,14 +92,14 @@ export default function Footer() {
             <p>Rua Conselheiro Saraiva, 207 - Santana, São Paulo/SP</p>
           </div>
           <div></div>
-          <div className="mx-auto">
-            <p className="hover:text-yellow-300 hover:scale-125 transition">
-              Desenvolvido por:{" "}
+          <div className="lg:mx-auto">
+            <p className="">
+              Desenvolvido por:{"   "}
               <Link
                 href="https://protifolio-eta.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline "
+                className="hover:underline  text-base hover:text-[#f8c538] hover:scale-105 transition pl-2"
               >
                 EPS Soluções
               </Link>

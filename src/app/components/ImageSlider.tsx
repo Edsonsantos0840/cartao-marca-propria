@@ -35,7 +35,7 @@ export default function ImageSlider(){
           src={image}
           alt={`Slide ${index + 1} do carrossel`}
           width={1500}
-          height={450}
+          height={550}
           quality={100}
           priority={index === 0}
         />

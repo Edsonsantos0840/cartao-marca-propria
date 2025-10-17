@@ -21,10 +21,8 @@ interface Service {
   description2?: string;
   subtitle?: string;
   ajuste?: string;
-  largura?: number;
-  altura?: number;
-  mdlargura?: string;
-  mdaltura?: string;
+  styl?: string;
+  left?: string;
   link?: {
     href: string;
     src: string | StaticImageData;
@@ -106,8 +104,8 @@ const servicesData: Service[] = [
     description: "Informações online ",
     description2: "na palma da mão.",
     subtitle: "Baixe gratuitamente nas plataformas",
-    largura: 130 ,
-    altura: 245,
+    styl: "-top-[1.6rem] md:-top-[2.3rem]",
+    left: "left-[4rem]",
     link: [
       {
         href: "",
@@ -128,8 +126,8 @@ const servicesData: Service[] = [
     description: "Com o Saque na Hora ",
     description2: "você pode retirar até 40%",
     ajuste: " do seu limite",
-    largura: 209,
-    altura: 268,
+    styl: "-top-[1.4rem] md:-top-[2.1rem]",
+    left: "left-0",
   },
   {
     image: '/assets/aprovacao-instantanea(1).png',
@@ -138,20 +136,20 @@ const servicesData: Service[] = [
     description: "O cartão é  ",
     description2: "aprovado em apenas ",
     ajuste: "00:01 segundo.",
-    largura: 190,
-    altura: 110,
+    styl: "-top-2  w-[260px] h-[260px] md:w-[250px] md:h-[250px] md:right-6",
+    left: "left-[4rem]",
   },
   {
     image: '/assets/celular-2.png',
-    title: "Recarga para celular",
+    title: "Recarga ",
     title2: "para celular",
     description:
       "Basta enviar um SMS GRATUITO ",
       description2:
       " com a palavra BCARGA para o",
       ajuste: " número 28595",
-      largura: 180 ,
-    altura: 239,
+      styl: "-top-[2.5rem] md:-top-[3.2rem] ",
+    left: "left-0",
   },
 ];
 

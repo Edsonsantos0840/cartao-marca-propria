@@ -10,7 +10,7 @@ import MobileSlide from "./components/MobileSlide";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="pt-[4.9rem]">
       <MobileSlide />
       <ImageSlider />
       <Vantagens />
