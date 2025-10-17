@@ -28,7 +28,7 @@ export default function CardQuemSomos() {
                 quality={100}
                 className="
                   photo-2 shadow-2xl rounded-md absolute z-20 
-                  -left-5 md:-left[5px] lg:left-3 top-[262px] md:top-[370px] lg:top-[340px] w-[240px] md:w-[360px] lg:w-[280] "
+                  -left-5 md:-left[5px] lg:-left-2 top-[262px] md:top-[370px] lg:top-[330px] w-[240px] md:w-[360px]  lg:w-[280px] "
               />
               <Image
                 src="/20-anos-de-tradicao-e-credibilidade.png"
