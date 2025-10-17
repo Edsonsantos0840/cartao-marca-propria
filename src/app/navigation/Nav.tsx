@@ -10,7 +10,7 @@ import { NaveFields } from "../fields/NaveFields";
 
 export default function Navbar() {
   return (
-    <aside className="bg-blue shadow-xl p-4 fixed top-0 left-0 right-0 z-50">
+    <section className="bg-blue shadow-xl p-4 fixed top-0 left-0 right-0 z-50">
       <nav className="flex items-center justify-between m-auto  max-w-[1100px] ">
         {/* Logo da Brasilcard */}
         <figure className="relative w-[180px] h-[45px] lg:w-[250px] lg:h-[47px] ">
@@ -28,7 +28,7 @@ export default function Navbar() {
         </figure>
         {/*------------------------- Controle para telas grandes.  ------------------------ */}
 
-        <div
+        <section
           className={`flex items-between md:gap-12 lg:gap-9 `}
         >
           <section className="flex flex-col justify-center lg:flex-row lg:space-x-6 text-white gap-6">
@@ -70,8 +70,8 @@ export default function Navbar() {
           >
             Solicite seu Cartão
           </Link>
-        </div>
+        </section>
       </nav>
-    </aside>
+    </section>
   );
 }

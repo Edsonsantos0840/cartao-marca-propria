@@ -7,7 +7,7 @@ import { servicesData } from "../fields/ListaVantagens";
 export default function CardServiços() {
   return (
     <section className="py-8  bg-gray-50  mx-auto" aria-label="Serviços da BrasilCard ">
-      <div className="px-4 lg:px-0">
+      <header className="px-4 lg:px-0">
         <h3 className="text-center text-[1.6rem] md:text-3xl font-black text-blue mb-4 md:my-16 lg:my-12">
           Serviços que vão facilitar sua vida!
         </h3>
@@ -81,7 +81,7 @@ export default function CardServiços() {
             </article>
           ))}
         </div>
-      </div>
+      </header>
     </section>
   );
 }

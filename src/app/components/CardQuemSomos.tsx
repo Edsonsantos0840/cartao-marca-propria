@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function CardQuemSomos() {
   return (
     <section className="brasilcard md:py-10 bg-white md:mb-24">
-      <div className="max-w-[1100px] mx-auto ">
+      <header className="max-w-[1100px] mx-auto ">
         <hr className="block lg:hidden md:mb-6" />
 
         <div className="flex flex-col items-center lg:flex-row  space-y-8 lg:space-y-0 lg:space-x-10 mt-8 lg:mt-0 px-4 lg:px-0">
@@ -79,7 +79,7 @@ export default function CardQuemSomos() {
             </Link>
           </article>
         </div>
-      </div>
+      </header>
     </section>
   );
 }

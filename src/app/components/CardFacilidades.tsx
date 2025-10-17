@@ -15,7 +15,7 @@ export default function CardFacilidades() {
       }}
       aria-label="Facilidades e vantagens do cartão BrasilCard"
     >
-      <div className="relative max-w-[1100px] mx-auto z-30">
+      <header className="relative max-w-[1100px] mx-auto z-30">
         <h3 className="text-center font-light text-[1.7rem] md:text-4xl text-blue text-shadow-lg px-6 lg:px-0  pt-6 md:pt-2 lg:py-10 ">
           Veja como é fácil fazer o seu BrasilCard e confira as vantagens:
         </h3>
@@ -55,7 +55,7 @@ export default function CardFacilidades() {
             </div>
           ))}
         </article>
-      </div>
+      </header>
     </section>
   );
 }

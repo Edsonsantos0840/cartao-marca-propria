@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Menu do Lojista */}
 
-          <aside>
+          <section>
             <h6 className="text-lg font-bold uppercase mb-4">
               Menu do Lojista
             </h6>
@@ -34,10 +34,10 @@ export default function Footer() {
                 </Link>
               ))}
             </nav>
-          </aside>
+          </section>
 
           {/* Menu Institucional */}
-          <aside className=" lg:mx-auto">
+          <section className=" lg:mx-auto">
             <h6 className="text-lg font-bold uppercase mb-4">
               Menu Institucional
             </h6>
@@ -56,10 +56,10 @@ export default function Footer() {
                 </Link>
               ))}
             </nav>
-          </aside>
+          </section>
 
           {/* Redes Sociais */}
-          <aside className="lg:mx-auto">
+          <section className="lg:mx-auto">
             <h6 className="text-lg font-bold uppercase mb-4">Redes Sociais</h6>
             <nav
               className="flex items-center space-x-5 text-2xl"
@@ -76,7 +76,7 @@ export default function Footer() {
                 </Link>
               ))}
             </nav>
-          </aside>
+          </section>
         </div>
       </div>
 
